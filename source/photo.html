@@ -8,10 +8,11 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo"><img class="page-header__logo--image" src="https://via.placeholder.com/150x150"
+    <a class="page-header__logo"><img class="page-header__logo-image" src="https://via.placeholder.com/150x150"
         width="150" height="50" alt="Пинк">
     </a>
     <nav class="page-header__main-nav main-nav">
+      <button class="main-nav__close" type="button">Закрыть</button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
           <a href="#">Главная</a>
@@ -26,14 +27,16 @@
           <a href="#">HTML Academy</a>
         </li>
       </ul>
-      <button class="main-nav__close" type="button"></button>
     </nav>
-    <p class="page-header__title">Фотографии пользователей</p>
   </header>
-  <main class="wrapper">
-    <h2 class="visually-hidden">Фотогалерея</h2>
-    <p class="wrapper__greeting"></p>
-    <div class="wrapper__reviews reviews">
+  <main>
+    <h1 class="visually-hidden">Фотогалерея с комментариями и оценками.</h1>
+    <div class="page-intro">
+      <p class="page-intro__title">Фотографии пользователей</p>
+    </div>
+    <section class="reviews">
+      <p class="reviews__greeting">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает
+        ваших?</p>
       <ul class="reviews__list">
         <li class="reviews__item story">
           <div class="story__container story__container--jump">
@@ -100,7 +103,7 @@
           </div>
         </li>
       </ul>
-    </div>
+    </section>
   </main>
 </body>
 

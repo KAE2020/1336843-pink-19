@@ -6,59 +6,61 @@
   <title>HTML Academy: Пинк</title>
 </head>
 
-<header class="page-header">
-  <a class="page-header__logo"><img class="page-header__logo--image" src="https://via.placeholder.com/150x150"
-      width="150" height="50" alt="Пинк">
-  </a>
-  <nav class="main-nav">
-    <ul class="main-nav__list site-list">
-      <li class="site-list__item">
-        <a href="#">Главная</a>
-      </li>
-      <li class="site-list__item">
-        <a href="#">Фотографии</a>
-      </li>
-      <li class="site-list__item">
-        <a href="#">Конкурс</a>
-      </li>
-      <li class="site-list__item">
-        <a href="#">HTML Academy</a>
-      </li>
-    </ul>
-    <button class="main-nav__close" type="button"></button>
-  </nav>
-  <p class="page-header__tagline">Взгляните на жизнь иначе!</p>
-  <img class="page-header__picture" src="https://via.placeholder.com/150x150" width="300" height="500"
-    alt="Телефон в руке">
-</header>
-<main class="wrapper">
-  <section class="wrapper__download-app download-app">
-    <h2 class="visually-hidden">Скачать приложение на Ваше устройство</h2>
-    <a class="download-app__link" href="#">Скачать приложение</a>
-    <div class="download-app__os">
-      <img class="download-app__image-ios" src="#">
-      <img class="download-app__image-android" src="#">
-      <img class="download-app__image-windows" src="#">
+<body>
+  <header class="page-header">
+    <a class="page-header__logo"><img class="page-header__logo-image" src="https://via.placeholder.com/150x150"
+        width="150" height="50" alt="Пинк">
+    </a>
+    <nav class="page-header__main-nav main-nav">
+      <button class="main-nav__close" type="button">Закрыть</button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Фотографии</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Конкурс</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">HTML Academy</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="page-intro">
+      <img class=page-intro__picture" src="https://via.placeholder.com/150x150" width="300" height="500"
+        alt="Телефон в руке">
     </div>
-    <p class="download-app__description">Доступно для iPhone, iPad, Android,
-      Windows Phone, OS X, Windows 8</p>
-  </section>
-  <article class="wrapper__adventage adventage">
-    <h2 class="visually-hidden">Подробное описание приложения</h2>
-    <p class="adventage__ask-answer">Устали от серости мегаполиса?</p>
-    <p class="adventage__ask-answer">Нам есть, что вам предложить!</p>
-    <h1 class="adventage__title">Поднимает настроение</h1>
-    <p class="adventage__description">Приложение позволит вам победить осеннюю депрессию буквально в несколько кликов!
-    </p>
-    <h1 class="adventage__title">Меняет мир вокруг</h1>
-    <p class="adventage__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-      эффект</p>
-    <h1 class="adventage__title">Заводит новых друзей</h1>
-    <p class="adventage__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями, заводите новых</p>
-    <img class="adventage__picture" src="https://via.placeholder.com/150x150" width="300" height="500"
-      alt="Приложение в телефоне">
-  </article>
-</main>
+    <section class="promo-app">
+      <h1 class="visually-hidden">Страница приложения, для скачивания на Ваше устройство - взгляните на мир ярче!</h1>
+      <a class="promo-app__link" href="#">Скачать приложение</a>
+      <div class="promo-app__os">
+        <a class="promo-app__link-ios"><img class="promo-app__image src=" #"></a>
+        <a class="promo-app__link-android"><img class="promo-app__image src=" #"></a>
+        <a class="promo-app__link-windows"><img class="promo-app__image src=" #"></a>
+      </div>
+      <p class="promo-app__description">Доступно для iPhone, iPad, Android,
+        Windows Phone, OS X, Windows 8</p>
+    </section>
+    <article class="advantage">
+      <p class="advantage__ask-answer">Устали от серости мегаполиса?</p>
+      <p class="advantage__ask-answer">Нам есть, что вам предложить!</p>
+      <h3 class="advantage__title">Поднимает настроение</h3>
+      <p class="advantage__description">Приложение позволит вам победить осеннюю депрессию буквально в несколько кликов!
+      </p>
+      <h3 class="advantage__title">Меняет мир вокруг</h3>
+      <p class="advantage__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
+        эффект</p>
+      <h3 class="advantage__title">Заводит новых друзей</h3>
+      <p class="advantage__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями, заводите новых
+      </p>
+      <img class="advantage__picture" src="https://via.placeholder.com/150x150" width="300" height="500"
+        alt="Приложение в телефоне">
+    </article>
+  </main>
 </body>
 
 </html>
