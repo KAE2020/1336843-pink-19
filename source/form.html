@@ -30,7 +30,7 @@
     </nav>
   </header>
   <main>
-    <h1 class="visually-hidden">Заполните форму регистрации и поучаствуйте в конкурсе от Пинк</h1>
+    <h2 class="visually-hidden">Заполните форму регистрации и поучаствуйте в конкурсе от Пинк</h2>
     <div class="page-intro">
       <p class="page-intro__title">Конкурс на самое безбашенное путешествие с Пинк</p>
     </div>
@@ -39,18 +39,18 @@
         бонусную карту!</p>
       <form action="https://echo.htmlacademy.ru" method="POST">
         <div class="page-form__data data">
-          <lable class="data__title" for="surname">Фамилия:</lable>
+          <label class="data__title" for="surname">Фамилия:</label>
           <input class="data__inside" type="text" id="surname" name="surname" value="Укажите фамилию *" required>
         </div>
         <div class="page-form__data data">
-          <lable class="data__title" for="name">Имя:</lable>
+          <label class="data__title" for="name">Имя:</label>
           <input class="data__inside" type="text" id="name" name="name" value="Введите ваше имя *" required>
         </div>
         <div class="page-form__data data">
-          <lable class="data__title" for="patronymic">Отчество:</lable>
+          <label class="data__title" for="patronymic">Отчество:</label>
           <input class="data__inside" type="text" id="patronymic" name="patronymic" value="Ну и отчество тоже *">
         </div>
-        <article class="page-form__article interview">
+        <div class="page-form__interview interview">
           <h3 class="interview__title">Ваши безбашенные достижения в путешествии</h3>
           <ul class="interview__list">
             <li class="interview__item">
@@ -77,16 +77,16 @@
               <label class="interview__description" for="feat-6">Разгромил отель</label>
             </li>
           </ul>
-        </article>
+        </div>
         <div class="page-form__data data">
-          <lable class="data__title" for="telephon-number">Номер телефона</lable>
+          <label class="data__title" for="telephone-number">Номер телефона</label>
           <input class="data__inside" type="text" id="telephon-number" name="telephon-number" value="Номер, пожалуйста">
         </div>
         <div class="page-form__data data">
-          <lable class="data__title" for="e-mail">Адрес почты</lable>
+          <label class="data__title" for="e-mail">Адрес почты</label>
           <input class="data__inside" type="text" id="e-mail" name="e-mail" value="Введите почту *" required>
         </div>
-        <article class="page-form__article interview">
+        <div class="page-form__interview interview">
           <h3 class="interview__title">С каким приложением путешествовали?</h3>
           <ul class="interview__list">
             <li class="interview__item">
@@ -102,15 +102,15 @@
               <label class="interview__description" for="for-windows"> PINK для Windows Phone</label>
             </li>
           </ul>
-        </article>
+        </div>
         <div class="page-form__data data">
-          <lable class="data__title" for="history">Опишите свои эмоции</lable>
+          <label class="data__title" for="history">Опишите свои эмоции</label>
           <textarea class="data__inside" rows="6" name="history"
             id="history">Можно прям в красках, не стесняясь в выражениях</textarea>
         </div>
         <button class="page-form__send" type="submit">Отправить форму</button>
-        <p class="page-form__requred"><span class="page-form__requred--red">*</span> — обязательные поля</p>
       </form>
+      <p class="page-form__requred"><span class="page-form__requred--red">*</span> — обязательные поля</p>
     </section>
   </main>
   <footer class="page-footer">
@@ -120,8 +120,7 @@
       <a class="page-footer__social-item page-footer__social-item--fb" href="#"></a>
       <a class="page-footer__social-item page-footer__social-item--play" href="#"></a>
     </div>
-    <p class="page-footer__developer">Разработано</p>
-    <a class="page-footer__link" href="#"></a>
+    <a class="page-footer__developer" href="#">Разработано</a>
   </footer>
 </body>
 

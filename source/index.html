@@ -30,12 +30,13 @@
     </nav>
   </header>
   <main>
-    <div class="page-intro">
-      <img class=page-intro__picture" src="https://via.placeholder.com/150x150" width="300" height="500"
-        alt="Телефон в руке">
-    </div>
+
     <section class="promo-app">
-      <h1 class="visually-hidden">Страница приложения, для скачивания на Ваше устройство - взгляните на мир ярче!</h1>
+      <h2 class="visually-hidden">Страница приложения, для скачивания на Ваше устройство - взгляните на мир ярче!</h2>
+      <div class="promo-app__intro">
+        <img class="promo-app__picture" src="https://via.placeholder.com/150x150" width="300" height="500"
+          alt="Телефон в руке">
+      </div>
       <a class="promo-app__link" href="#">Скачать приложение</a>
       <div class="promo-app__os">
         <a class="promo-app__link-ios"><img class="promo-app__image src=" #"></a>
@@ -46,28 +47,41 @@
         Windows Phone, OS X, Windows 8</p>
     </section>
     <article class="advantage">
-      <p class="advantage__ask-answer">Устали от серости мегаполиса?</p>
-      <p class="advantage__ask-answer">Нам есть, что вам предложить!</p>
-      <h3 class="advantage__title">Поднимает настроение</h3>
-      <p class="advantage__description">Приложение позволит вам победить осеннюю депрессию буквально в несколько кликов!
-      </p>
-      <h3 class="advantage__title">Меняет мир вокруг</h3>
-      <p class="advantage__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-        эффект</p>
-      <h3 class="advantage__title">Заводит новых друзей</h3>
-      <p class="advantage__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями, заводите новых
-      </p>
+      <div class="advantage__intro">
+        <p class="advantage__ask-answer">Устали от серости мегаполиса?</p>
+        <p class="advantage__ask-answer">Нам есть, что вам предложить!</p>
+      </div>
+      <ul class="advantage__list">
+        <li class="advantage__item">
+          <h3 class="advantage__title">Поднимает настроение</h3>
+          <p class="advantage__description">Приложение позволит вам победить осеннюю депрессию буквально в несколько
+            кликов!
+          </p>
+        </li>
+        <li class="advantage__item">
+          <h3 class="advantage__title">Меняет мир вокруг</h3>
+          <p class="advantage__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+            усилить
+            эффект</p>
+        </li>
+        <li class="advantage__item">
+          <h3 class="advantage__title">Заводит новых друзей</h3>
+          <p class="advantage__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями, заводите
+            новых
+          </p>
+        </li>
+      </ul>
       <img class="advantage__picture" src="https://via.placeholder.com/150x150" width="300" height="500"
         alt="Приложение в телефоне">
     </article>
     <section class="slider-comment">
-      <input class="slider-comment__indicator" id="review-1" type="radio" checked>
+      <input class="slider-comment__indicator" id="slide-review-1" type="radio" checked>
       <input class="slider-comment__indicator" id="review-2" type="radio">
       <input class="slider-comment__indicator" id="review-3" type="radio">
       <div>
-        <label for="review-1"></label>
-        <label for="review-2"></label>
-        <label for="review-3"></label>
+        <label for="slide-review-1"></label>
+        <label for="slide-review-2"></label>
+        <label for="slide-review-3"></label>
       </div>
       <div class="slider-comment__content" id="slide-comment-1">
         <div class="slider-comment__text">
@@ -86,13 +100,13 @@
       </div>
     </section>
     <section class="slider-tariff">
-      <input class="slider-tariff__indicator" id="tariff-1" type="radio">
-      <input class="slider-tariff__indicator" id="tariff-2" type="radio" checked>
-      <input class="slider-tariff__indicator" id="tariff-3" type="radio">
+      <input class="slider-tariff__indicator" id="slide-classic" type="radio">
+      <input class="slider-tariff__indicator" id="slide-standart" type="radio" checked>
+      <input class="slider-tariff__indicator" id="slide-comfort" type="radio">
       <div>
-        <label for="tariff-1"></label>
-        <label for="tariff-2"></label>
-        <label for="tariff-3"></label>
+        <label for="slide-classic"></label>
+        <label for="slide-standart"></label>
+        <label for="slide-comfort"></label>
       </div>
       <div class="slider-tariff__content">
         <div class="slider-tariff__text" id="slide-tariff-1">
@@ -101,31 +115,31 @@
             <span class="slider-tariff__price">2,99 usd</span>
           </div>
           <ul class="slider-tariff__list">
-            <li class="slider-tariff__item slider-tariff__item--cheked">Розовый фильтр</li>
-            <li class="slider-tariff__item slider-tariff__item--uncheked">Смайлики</li>
-            <li class="slider-tariff__item slider-tariff__item--uncheked">Комментарии</li>
+            <li class="slider-tariff__item slider-tariff__item--checked">Розовый фильтр</li>
+            <li class="slider-tariff__item slider-tariff__item--unchecked">Смайлики</li>
+            <li class="slider-tariff__item slider-tariff__item--unchecked">Комментарии</li>
           </ul>
         </div>
-        <div class="slider-tariff__text" id="slide-tariff-1">
+        <div class="slider-tariff__text" id="slide-tariff-2">
           <div class="slider-tariff__heading slider-tariff__heading--standart">
             <p class="slider-tariff__tariff">Стандарт</p>
             <span class="slider-tariff__price">3,99 usd</span>
           </div>
           <ul class="slider-tariff__list">
             <li class="slider-tariff__item slider-tariff__item--cheked">Розовый фильтр</li>
-            <li class="slider-tariff__item slider-tariff__item--cheked">Смайлики</li>
-            <li class="slider-tariff__item slider-tariff__item--uncheked">Комментарии</li>
+            <li class="slider-tariff__item slider-tariff__item--checked">Смайлики</li>
+            <li class="slider-tariff__item slider-tariff__item--unchecked">Комментарии</li>
           </ul>
         </div>
-        <div class="slider-tariff__text" id="slide-tariff-1">
+        <div class="slider-tariff__text" id="slide-tariff-3">
           <div class="slider-tariff__heading">
             <p class="slider-tariff__tariff">Комфорт</p>
             <span class="slider-tariff__price">4,99 usd</span>
           </div>
           <ul class="slider-tariff__list">
-            <li class="slider-tariff__item slider-tariff__item--cheked">Розовый фильтр</li>
-            <li class="slider-tariff__item slider-tariff__item--cheked">Смайлики</li>
-            <li class="slider-tariff__item slider-tariff__item--cheked">Комментарии</li>
+            <li class="slider-tariff__item slider-tariff__item--checked">Розовый фильтр</li>
+            <li class="slider-tariff__item slider-tariff__item--checked">Смайлики</li>
+            <li class="slider-tariff__item slider-tariff__item--checked">Комментарии</li>
           </ul>
         </div>
       </div>
@@ -135,11 +149,11 @@
       <div class="page-footer__contacts contacts">
         <div class="contacts__common">
           <h4 class="contacts__title">Звоните:</h4>
-          <p class="contacts__info" href="tel:+78125556666">+7(812)555-66-66</p>
+          <a class="contacts__info" href="tel:+78125556666">+7(812)555-66-66</a>
         </div>
         <div class="contacts__common">
           <h4 class="contacts__title">Пишите:</h4>
-          <p class="contacts__info" href="mail@htmlacademy.ru">mail@htmlacademy.ru</p>
+          <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
         <div class="contacts__common">
           <h4 class="contacts__title">Приезжайте в гости:</h4>

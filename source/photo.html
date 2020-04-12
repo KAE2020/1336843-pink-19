@@ -30,7 +30,7 @@
     </nav>
   </header>
   <main>
-    <h1 class="visually-hidden">Фотогалерея с комментариями и оценками.</h1>
+    <h2 class="visually-hidden">Фотогалерея с комментариями и оценками.</h2>
     <div class="page-intro">
       <p class="page-intro__title">Фотографии пользователей</p>
     </div>
@@ -41,7 +41,7 @@
         <li class="reviews__item story">
           <div class="story__container">
             <a class="reviews__link" href="#">
-              <img class="story__picture story__picture--jump" src="https://via.placeholder.com/150x150" width="150"
+              <img class="story__picture story__picture--panorama" src="https://via.placeholder.com/150x150" width="150"
                 height="50" alt="Прыжок с высоты">
             </a>
             <h3 class="story__name">Анна(5 минут назад)</h3>
@@ -119,26 +119,24 @@
       </ul>
       <p class="reviews_footer">Затмите их всех! Выкладывайте все, что накопилось в телефоне.</p>
     </section>
-    <div class="page-form">
+    <section class="photo-editor">
       <form action="https://echo.htmlacademy.ru">
-        <img class="page-form__object" src="https://via.placeholder.com/150x150" width="150" height="50"
+        <img class="photo-editor__object" src="https://via.placeholder.com/150x150" width="150" height="50"
           alt="Зимняя дорога">
-        <div class="page-form__radio-buttons">
-          <input type="radio" name="crop" id="crop" checked>
-          <input type="radio" name="contrast" id="contrast">
-          <input type="radio" name="lighter" id="lighter">
-        </div>
-        <div class="page-form__radio-lables">
-          <lable for="crop"></lable>
+        <input type="radio" name="crop" id="crop" checked>
+        <input type="radio" name="contrast" id="contrast">
+        <input type="radio" name="lighter" id="lighter">
+        <div class="photo-editor__radio-labels">
+          <label for="crop"></label>
           <label for="contrast"></label>
           <label for="lighter"></label>
         </div>
         <input type="range" id="scale" name="scale">
         <label for="scale"></label>
-        <button class="page-form__button page-form__button--send" type="submit">Запостить</button>
-        <button class="page-form__button page-form__button--cancel" type="reset">Отмена</button>
+        <button class="photo-editor__button photo-editor__button--send" type="submit">Запостить</button>
+        <button class="photo-editor__button photo-editor__button--cancel" type="reset">Отмена</button>
       </form>
-    </div>
+    </section>
   </main>
   <footer class="page-footer">
     <img class="page-footer__logo" src="#">
@@ -147,8 +145,7 @@
       <a class="page-footer__social-item page-footer__social-item--fb" href="#"></a>
       <a class="page-footer__social-item page-footer__social-item--play" href="#"></a>
     </div>
-    <p class="page-footer__developer">Разработано</p>
-    <a class="page-footer__link" href="#"></a>
+    <a class="page-footer__developer" href="#">Разработано</a>
   </footer>
 </body>
 
