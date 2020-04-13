@@ -8,8 +8,8 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo"><img class="page-header__logo-image" src="https://via.placeholder.com/150x150"
-        width="150" height="50" alt="Пинк">
+    <a class="page-header__logo" href="index.html"><img class="page-header__logo-image"
+        src="https://via.placeholder.com/150x150" width="150" height="50" alt="Пинк">
     </a>
     <nav class="page-header__main-nav main-nav">
       <button class="main-nav__close" type="button">Закрыть</button>
@@ -30,11 +30,100 @@
     </nav>
   </header>
   <main>
-    <h1 class="visually-hidden">Заполните форму регистрации и поучаствуйте в конкурсе от Пинк</h1>
+    <h2 class="visually-hidden">Поучаствуйте в конкурсе от Пинк</h2>
     <div class="page-intro">
       <p class="page-intro__title">Конкурс на самое безбашенное путешествие с Пинк</p>
     </div>
+    <section class="page-form">
+      <h2 class="visually hidden">Укажите все необходимые данные и нажмите "отправить форму"</h2>
+      <p class="page-form__greeting">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
+        бонусную карту!</p>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <div class="page-form__data data">
+          <label class="data__title" for="surname">Фамилия:</label>
+          <input class="data__inside" type="text" id="surname" name="surname" value="Укажите фамилию *" required>
+        </div>
+        <div class="page-form__data data">
+          <label class="data__title" for="name">Имя:</label>
+          <input class="data__inside" type="text" id="name" name="name" value="Введите ваше имя *" required>
+        </div>
+        <div class="page-form__data data">
+          <label class="data__title" for="patronymic">Отчество:</label>
+          <input class="data__inside" type="text" id="patronymic" name="patronymic" value="Ну и отчество тоже *">
+        </div>
+        <div class="page-form__interview interview">
+          <h3 class="interview__title">Ваши безбашенные достижения в путешествии</h3>
+          <ul class="interview__list">
+            <li class="interview__item">
+              <input class="interview__check" type="checkbox" id="feat-1" name="feat-1" checked>
+              <label class="interview__description" for="feat-1">Сделал селфи с акулой</label>
+            </li>
+            <li class="interview__item">
+              <input class="interview__check" type="checkbox" id="feat-2" name="feat-2" checked>
+              <label class="interview__description" for="feat-2">Обгорел на пляже</label>
+            <li class="interview__item">
+              <input class="interview__check" type="checkbox" id="feat-3" name="feat-3">
+              <label class="interview__description" for="feat-3">Видел Чака Норриса</label>
+            </li>
+            <li class="interview__item">
+              <input class="interview__check" type="checkbox" id="feat-4" name="feat-4">
+              <label class="interview__description" for="feat-4">Накупил сувениров</label>
+            </li>
+            <li class="interview__item">
+              <input class="interview__check" type="checkbox" id="feat-5" name="feat-5" checked>
+              <label class="interview__description" for="feat-5">Удержал башню</label>
+            </li>
+            <li class="interview__item">
+              <input class="interview__check" type="checkbox" id="feat-6" name="feat-6">
+              <label class="interview__description" for="feat-6">Разгромил отель</label>
+            </li>
+          </ul>
+        </div>
+        <div class="page-form__data data">
+          <label class="data__title" for="telephone-number">Номер телефона</label>
+          <input class="data__inside" type="text" id="telephone-number" name="telephone-number"
+            value="Номер, пожалуйста">
+        </div>
+        <div class="page-form__data data">
+          <label class="data__title" for="e-mail">Адрес почты</label>
+          <input class="data__inside" type="text" id="e-mail" name="e-mail" value="Введите почту *" required>
+        </div>
+        <div class="page-form__interview interview">
+          <h3 class="interview__title">С каким приложением путешествовали?</h3>
+          <ul class="interview__list">
+            <li class="interview__item">
+              <input class="interview__radio-check" type="radio" id="for-ios" name="for-ios" checked>
+              <label class="interview__description" for="for-ios"> PINK для iOS</label>
+            </li>
+            <li class="interview__item">
+              <input class="interview__radio-check" type="radio" id="for-android" name="for-android">
+              <label class="interview__description" for="for-android"> PINK для Android</label>
+            </li>
+            <li class="interview__item">
+              <input class="interview__radio-check" type="radio" id="for-windows" name="for-windows">
+              <label class="interview__description" for="for-windows"> PINK для Windows Phone</label>
+            </li>
+          </ul>
+        </div>
+        <div class="page-form__data data">
+          <label class="data__title" for="history">Опишите свои эмоции</label>
+          <textarea class="data__inside" rows="6" name="history"
+            id="history">Можно прям в красках, не стесняясь в выражениях</textarea>
+        </div>
+        <button class="page-form__send" type="submit">Отправить форму</button>
+      </form>
+      <p class="page-form__requred"><span class="page-form__requred--red">*</span> — обязательные поля</p>
+    </section>
   </main>
+  <footer class="page-footer">
+    <img class="page-footer__logo" src="#" alt="Логотип Пинк">
+    <div class="page-footer__socials">
+      <a class="page-footer__social-item page-footer__social-item--twitter" href="#"></a>
+      <a class="page-footer__social-item page-footer__social-item--fb" href="#"></a>
+      <a class="page-footer__social-item page-footer__social-item--play" href="#"></a>
+    </div>
+    <a class="page-footer__developer" href="#">Разработано</a>
+  </footer>
 </body>
 
 </html>

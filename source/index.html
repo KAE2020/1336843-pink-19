@@ -8,8 +8,8 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo"><img class="page-header__logo-image" src="https://via.placeholder.com/150x150"
-        width="150" height="50" alt="Пинк">
+    <a class="page-header__logo" href="index.html"><img class="page-header__logo-image"
+        src="https://via.placeholder.com/150x150" width="150" height="50" alt="Пинк">
     </a>
     <nav class="page-header__main-nav main-nav">
       <button class="main-nav__close" type="button">Закрыть</button>
@@ -30,36 +30,140 @@
     </nav>
   </header>
   <main>
-    <div class="page-intro">
-      <img class=page-intro__picture" src="https://via.placeholder.com/150x150" width="300" height="500"
-        alt="Телефон в руке">
-    </div>
+
     <section class="promo-app">
-      <h1 class="visually-hidden">Страница приложения, для скачивания на Ваше устройство - взгляните на мир ярче!</h1>
+      <h2 class="visually-hidden">Страница приложения, для скачивания на Ваше устройство - взгляните на мир ярче!</h2>
+      <div class="promo-app__intro">
+        <img class="promo-app__picture" src="https://via.placeholder.com/150x150" width="300" height="500"
+          alt="Телефон в руке">
+      </div>
       <a class="promo-app__link" href="#">Скачать приложение</a>
       <div class="promo-app__os">
-        <a class="promo-app__link-ios"><img class="promo-app__image src=" #"></a>
-        <a class="promo-app__link-android"><img class="promo-app__image src=" #"></a>
-        <a class="promo-app__link-windows"><img class="promo-app__image src=" #"></a>
+        <a class="promo-app__link-ios"><img class="promo-app__image" src="#" alt="Логотип Эппл"></a>
+        <a class="promo-app__link-android"><img class="promo-app__image" src="#" alt="Логотип Андроид"></a>
+        <a class="promo-app__link-windows"><img class="promo-app__image" src="#" alt="Логотип Виндовс-Фон"></a>
       </div>
       <p class="promo-app__description">Доступно для iPhone, iPad, Android,
         Windows Phone, OS X, Windows 8</p>
     </section>
-    <article class="advantage">
-      <p class="advantage__ask-answer">Устали от серости мегаполиса?</p>
-      <p class="advantage__ask-answer">Нам есть, что вам предложить!</p>
-      <h3 class="advantage__title">Поднимает настроение</h3>
-      <p class="advantage__description">Приложение позволит вам победить осеннюю депрессию буквально в несколько кликов!
-      </p>
-      <h3 class="advantage__title">Меняет мир вокруг</h3>
-      <p class="advantage__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-        эффект</p>
-      <h3 class="advantage__title">Заводит новых друзей</h3>
-      <p class="advantage__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями, заводите новых
-      </p>
+    <section class="advantage">
+      <h2 class="visually hidden">Преимущества приложения</h2>
+      <div class="advantage__intro">
+        <p class="advantage__ask-answer">Устали от серости мегаполиса?</p>
+        <p class="advantage__ask-answer">Нам есть, что вам предложить!</p>
+      </div>
+      <ul class="advantage__list">
+        <li class="advantage__item">
+          <h3 class="advantage__title">Поднимает настроение</h3>
+          <p class="advantage__description">Приложение позволит вам победить осеннюю депрессию буквально в несколько
+            кликов!
+          </p>
+        </li>
+        <li class="advantage__item">
+          <h3 class="advantage__title">Меняет мир вокруг</h3>
+          <p class="advantage__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+            усилить
+            эффект</p>
+        </li>
+        <li class="advantage__item">
+          <h3 class="advantage__title">Заводит новых друзей</h3>
+          <p class="advantage__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями, заводите
+            новых
+          </p>
+        </li>
+      </ul>
       <img class="advantage__picture" src="https://via.placeholder.com/150x150" width="300" height="500"
         alt="Приложение в телефоне">
-    </article>
+    </section>
+    <section class="slider-comment">
+      <input class="slider-comment__indicator" id="slide-review-1" type="radio" checked>
+      <input class="slider-comment__indicator" id="slide-review-2" type="radio">
+      <input class="slider-comment__indicator" id="slide-review-3" type="radio">
+      <div>
+        <label for="slide-review-1"></label>
+        <label for="slide-review-2"></label>
+        <label for="slide-review-3"></label>
+      </div>
+      <div class="slider-comment__content" id="slide-comment-1">
+        <div class="slider-comment__text">
+          <h3 class="slider-comment__user">Николай Петров</h3>
+          <p class="slider-comment__review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
+            привычные серые вещи! А еще познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+        <div class="slider-comment__text" id="slide-comment-2">
+          <h3 class="slider-comment__user">Пользователь 2</h3>
+          <p class="slider-comment__review">Отзыв№2</p>
+        </div>
+        <div class="slider-comment__text" id="slide-comment-3">
+          <h3 class="slider-comment__user">Пользователь 3</h3>
+          <p class="slider-comment__review">Отзыв№3</p>
+        </div>
+      </div>
+    </section>
+    <section class="slider-tariff">
+      <h2 class="visually hidden">Выбор тарифного плана с доступными опциями</h2>
+      <input class="slider-tariff__indicator" id="slide-classic" type="radio">
+      <input class="slider-tariff__indicator" id="slide-standart" type="radio" checked>
+      <input class="slider-tariff__indicator" id="slide-comfort" type="radio">
+      <div>
+        <label for="slide-classic"></label>
+        <label for="slide-standart"></label>
+        <label for="slide-comfort"></label>
+      </div>
+      <div class="slider-tariff__content">
+        <div class="slider-tariff__text" id="slide-tariff-1">
+          <div class="slider-tariff__heading">
+            <p class="slider-tariff__tariff">Классик</p>
+            <span class="slider-tariff__price">2,99 usd</span>
+          </div>
+          <ul class="slider-tariff__list">
+            <li class="slider-tariff__item slider-tariff__item--checked">Розовый фильтр</li>
+            <li class="slider-tariff__item slider-tariff__item--unchecked">Смайлики</li>
+            <li class="slider-tariff__item slider-tariff__item--unchecked">Комментарии</li>
+          </ul>
+        </div>
+        <div class="slider-tariff__text" id="slide-tariff-2">
+          <div class="slider-tariff__heading slider-tariff__heading--standart">
+            <p class="slider-tariff__tariff">Стандарт</p>
+            <span class="slider-tariff__price">3,99 usd</span>
+          </div>
+          <ul class="slider-tariff__list">
+            <li class="slider-tariff__item slider-tariff__item--checked">Розовый фильтр</li>
+            <li class="slider-tariff__item slider-tariff__item--checked">Смайлики</li>
+            <li class="slider-tariff__item slider-tariff__item--unchecked">Комментарии</li>
+          </ul>
+        </div>
+        <div class="slider-tariff__text" id="slide-tariff-3">
+          <div class="slider-tariff__heading">
+            <p class="slider-tariff__tariff">Комфорт</p>
+            <span class="slider-tariff__price">4,99 usd</span>
+          </div>
+          <ul class="slider-tariff__list">
+            <li class="slider-tariff__item slider-tariff__item--checked">Розовый фильтр</li>
+            <li class="slider-tariff__item slider-tariff__item--checked">Смайлики</li>
+            <li class="slider-tariff__item slider-tariff__item--checked">Комментарии</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <p class="page-footer__feedback">Остались вопросы? Свяжитесь с нами!</p>
+      <div class="page-footer__contacts contacts">
+        <div class="contacts__common">
+          <h4 class="contacts__title">Звоните:</h4>
+          <a class="contacts__info" href="tel:+78125556666">+7(812)555-66-66</a>
+        </div>
+        <div class="contacts__common">
+          <h4 class="contacts__title">Пишите:</h4>
+          <a class="contacts__info" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__common">
+          <h4 class="contacts__title">Приезжайте в гости:</h4>
+          <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
+        </div>
+      </div>
+      <img class="page-footer__map" src="#" alt="Место на карте">
+    </footer>
   </main>
 </body>
 
