@@ -1,0 +1,26 @@
+.reviews {
+background-color: #ffffff;
+width: 320px;
+}
+
+.reviews__greeting {
+  color: #283645;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+padding: 50px 35px;
+margin: 0;
+}
+
+.reviews__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0;
+}
+
+.reviews__link {
+display: inline-block;
+}
