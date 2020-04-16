@@ -1,0 +1,24 @@
+body {
+
+  min-width: 320px;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.page-header {
+width: 320px;
+height: 326px;
+}
+
+.page-header__logo {
+position: relative;
+width: 320px;
+height: 70px;
+background-color: $navy-night-background;
+display: block;
+border-bottom: 1px solid #000000;
+box-sizing: border-box;
+}
+
+.page-header__logo-image {
+padding: 24px 0 0 20px;
+}
