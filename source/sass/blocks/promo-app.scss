@@ -1,6 +1,6 @@
 .promo-app {
-background-color: $navy-night-background;
-width: 320px;
+  background-color: $navy-night-background;
+  width: 320px;
 }
 
 .promo-app__intro {
@@ -11,7 +11,7 @@ width: 320px;
 }
 
 .promo-app__picture {
-padding-top: 110px;
+  padding-top: 110px;
 }
 
 .promo-app__link {
@@ -28,11 +28,10 @@ padding-top: 110px;
   margin: 28px auto 30px;
   align-items: center;
   justify-content: center;
-  font-weight: bold;
 }
 
 .promo-app__os {
-  margin: 0px auto;
+  margin: 0 auto;
   width: 210px;
   display: flex;
   align-items: center;
@@ -41,9 +40,9 @@ padding-top: 110px;
 
 .promo-app__description {
   color: #ffffff;
-font-size: 14px;
-font-weight: 300;
-text-align: center;
-margin: 0;
-padding: 25px 40px 35px 40px;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+  padding: 25px 40px 35px 40px;
 }

@@ -9,10 +9,9 @@
   width: 320px;
   height: 64px;
   box-sizing: border-box;
-  background-color: #1d2632;
+  background-color: $navy-night-background;
   border-bottom: 1px solid #000000;
-  border-top: 1px solid #485461;
-  box-sizing: border-box;
+  border-top: 1px solid $dark-grey-border;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +20,7 @@
 .site-list__link {
   text-decoration: none;
   color: #ffffff;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;

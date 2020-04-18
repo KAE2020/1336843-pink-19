@@ -1,26 +1,23 @@
-.story {
-
-}
 .story__conteiner {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .story__picture {
-vertical-align: middle;
-position: relative;
+  vertical-align: middle;
+  position: relative;
 }
 
 .story__picture--panorama::before {
-position: absolute;
-content: "";
-background-image: url("../../img/panorama-day.png");
-background-repeat: no-repeat;
-width: 140px;
-height: 36px;
-top: 0px;
-left: 150px;
+  position: absolute;
+  content: "";
+  background-image: url("../../img/panorama-day.png");
+  background-repeat: no-repeat;
+  width: 140px;
+  height: 36px;
+  top: 0;
+  left: 150px;
 }
 
 .story__detail {
@@ -29,28 +26,29 @@ left: 150px;
   background-color: $grey-background;
 }
 
-.story__name{
-font-size: 14px;
-font-weight: bold;
-margin: 0;
-padding: 20px 0 5px 18px;
-}
-.story__name-date {
-font-weight: 300;
+.story__name {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px 0 5px 18px;
 }
 
-.story__comment{
-padding: 0 0 15px 18px;
-color: $darkblue-text;
-font-size: 14px;
-margin: 0;
+.story__name-date {
+  font-weight: 300;
+}
+
+.story__comment {
+  padding: 0 0 15px 18px;
+  color: $darkblue-text;
+  font-size: 14px;
+  margin: 0;
 }
 
 .story__like {
   display: block;
   padding: 0 0 25px 50px;
   color: $crimson;
-position: relative;
+  position: relative;
 }
 
 .story__svg {
