@@ -13,12 +13,11 @@
 }
 
 .reviews__list {
-  list-style: none;
+  @include list-reset();
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
-  padding: 0;
 }
 
 .reviews__link {
