@@ -1,0 +1,35 @@
+.data {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.data__title {
+  @include title-input();
+  padding-left: 20px;
+  line-height: 30px;
+  margin-bottom: 5px;
+
+  &--center {
+    text-align: center;
+    padding: 0;
+  }
+}
+
+.data__inside {
+  @include data-input();
+  border: 2px solid $grey-border-form;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+  outline: none;
+
+  &:hover {
+    border: 2px solid $darkblue;
+  }
+
+  &:active {
+    border: 2px solid $crimson;
+  }
+}

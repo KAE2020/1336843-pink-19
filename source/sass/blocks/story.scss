@@ -6,18 +6,6 @@
 
 .story__picture {
   vertical-align: middle;
-  position: relative;
-}
-
-.story__picture--panorama::before {
-  position: absolute;
-  content: "";
-  background-image: url("../../img/panorama-day.png");
-  background-repeat: no-repeat;
-  width: 140px;
-  height: 36px;
-  top: 0;
-  left: 150px;
 }
 
 .story__detail {

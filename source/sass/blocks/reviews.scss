@@ -18,8 +18,32 @@
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
+  margin: 0;
 }
 
 .reviews__link {
   display: inline-block;
+  position: relative;
+
+  &--panorama::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/panorama-day.png");
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 36px;
+    top: 0;
+    left: 160px;
+  }
+}
+
+.reviews__footer {
+  font-size: 14px;
+  line-height: 30px;
+  color: $darkblue;
+  display: block;
+  width: 280px;
+  height: 90px;
+  text-align: center;
+  margin: 0 auto 20px;
 }

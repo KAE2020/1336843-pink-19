@@ -1,0 +1,52 @@
+.page-form {
+  width: 320px;
+  background-color: #ffffff;
+}
+
+.page-form__greeting {
+  font-size: 14px;
+  line-height: 30px;
+  color: $darkblue;
+  width: 280px;
+  text-align: center;
+  margin: 50px auto 45px;
+}
+
+.page-form__send {
+  width: 280px;
+  height: 63px;
+  background-color: $green-button;
+  border-radius: 3px;
+  margin: 32px 20px 40px;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0;
+
+  &:hover {
+    background-color: $green-button-hover;
+  }
+
+  &:active {
+    background-color: $green-button-hover;
+    color: $green-button-active-text;
+  }
+
+  &:disabled {
+    background-color: $grey-border-form;
+  }
+}
+
+.page-form__requred {
+  text-align: center;
+  color: $darkblue;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0 auto 20px;
+
+  &--red {
+    color: $crimson;
+  }
+}

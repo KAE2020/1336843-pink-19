@@ -1,0 +1,125 @@
+.photo-editor {
+  background-color: $grey-background;
+}
+
+.photo-editor__object {
+  margin: 20px;
+}
+
+.photo-editor__indicator {
+  display: none;
+}
+
+.photo-editor__radio-labels {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.photo-editor__svg {
+  fill: $darkgrey;
+
+  &--crop {
+    width: 48px;
+    height: 48px;
+  }
+
+  &--fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  &--contrast {
+    width: 32px;
+    height: 32px;
+  }
+
+  &:hover {
+    fill: $dark-grey-hover;
+  }
+}
+
+#crop:checked ~ .photo-editor__radio-labels .photo-editor__svg--crop,
+#fill:checked ~ .photo-editor__radio-labels .photo-editor__svg--fill,
+#contrast:checked ~ .photo-editor__radio-labels .photo-editor__svg--contrast {
+  fill: $crimson;
+}
+
+.photo-editor__indicator-scale {
+  display: none;
+}
+
+.photo-editor__label-scale {
+  width: 240px;
+  height: 2px;
+  background-color: $darkblue;
+  display: block;
+  margin: 35px auto;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border: 2px solid $crimson;
+    position: absolute;
+    border-radius: 50%;
+    top: -6px;
+    left: 193px;
+  }
+
+  &:active::before {
+    background-color: $crimson;
+  }
+}
+
+.photo-editor__buttons {
+  width: 320px;
+  height: 202px;
+  border-top: 1px solid $lightgrey;
+}
+
+.photo-editor__button {
+  @include button();
+  margin: 38px auto 0;
+  outline: none;
+}
+
+.photo-editor__button--send {
+  border: 3px solid $crimson;
+  color: $crimson;
+
+  &:hover {
+    background-color: $crimson;
+    color: #ffffff;
+    border: none;
+  }
+
+  &:active {
+    opacity: 30%;
+    background-color: $crimson;
+    color: #ffffff;
+    border: none;
+  }
+}
+
+.photo-editor__button--cancel {
+  border: 3px solid $lightgrey;
+  color: $lightgrey;
+  margin-top: 12px;
+
+  &:hover {
+    color: $darkgrey;
+    border: 3px solid $darkgrey;
+  }
+
+  &:active {
+    background-color: $darkgrey;
+    color: $lightgrey;
+    border: none;
+  }
+}

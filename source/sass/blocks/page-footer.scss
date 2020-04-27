@@ -1,0 +1,122 @@
+.page-footer {
+  width: 320px;
+  height: 285px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__logo {
+  margin-top: 40px;
+
+  &:hover .page-footer__path {
+    fill: $crimson;
+  }
+
+  &:active .page-footer__path {
+    fill: $darkblue;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.page-footer__socials {
+  width: 179px;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__social-item {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  background-color: transparent;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+
+  &:hover {
+    border: 3px solid $darkblue;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
+}
+
+.page-footer__social-item--twitter {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 18px;
+    height: 15px;
+    background-image: url("../../img/icon-twitter.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 45px/2 - (15px / 2);
+    left: 45px/2 - (18px / 2);
+  }
+}
+
+.page-footer__social-item--fb {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 9px;
+    height: 19px;
+    background-image: url("../../img/icon-facebook.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 45px/2 - (19px / 2);
+    left: 45px/2 - (9px / 2);
+  }
+}
+
+.page-footer__social-item--youtube {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 15px;
+    height: 14px;
+    background-image: url("../../img/icon-youtube.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 45px/2 - (14px / 2);
+    left: 45px/2 - (15px / 2);
+  }
+}
+
+.page-footer__developer {
+  text-decoration: none;
+  margin-bottom: 35px;
+}
+
+.page-footer__developer-text {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 5px;
+  margin: 0 10px 0 0;
+  color: $darkblue;
+
+  &:active {
+    color: $darkblue;
+  }
+}
+
+.page-footer__developer-site {
+  &:hover {
+    fill: $darkblue;
+  }
+
+  &:active {
+    fill: $darkblue;
+    opacity: 30%;
+  }
+}

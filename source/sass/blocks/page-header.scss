@@ -6,7 +6,11 @@ body {
 
 .page-header {
   width: 320px;
-  height: 326px;
+  height: auto;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-position: bottom;
 }
 
 .page-header__logo {
@@ -14,11 +18,33 @@ body {
   width: 320px;
   height: 70px;
   background-color: $darkblue;
-  display: block;
-  border-bottom: 1px solid #000000;
+  opacity: 85%;
   box-sizing: border-box;
+  display: block;
+  z-index: 2;
+  border: none;
 }
 
 .page-header__logo-image {
   padding: 24px 0 0 20px;
+  z-index: 3;
+}
+
+.page-header__intro-secondary {
+  width: 320px;
+  height: 171px;
+}
+
+.page-header__title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  padding: 20px 30px 0;
+  margin: 0 auto;
+}
+
+.page-header__picture {
+  margin-top: 20px;
+  display: block;
 }
