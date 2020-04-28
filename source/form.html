@@ -7,13 +7,33 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html"><img class="page-header__logo-image"
-          src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
-      </a>
+    <header class="page-header page-header--open">
+      <div class="page-header__home">
+        <a class="page-header__logo" href="index.html">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+        </a>
+        <button class="page-header__button-off" type="button" title="Показать/скрыть"><svg class="page-header__button-on"
+            version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007"
+            enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+            <g id="miu">
+              <g id="editor_list_view_hambuger_menu_glyph">
+                <g>
+                  <path id="path-1" fill="#FFFFFF"
+                    d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01h2.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01h2.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011h2.137z" />
+                </g>
+                <g>
+                  <path id="path-1_1_" fill="#FFFFFF"
+                    d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01h2.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01h2.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011h2.137z" />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </button>
+      </div>
       <nav class="page-header__main-nav main-nav">
-        <button class="main-nav__close" type="button" title="Закрыть"></button>
-        <button class="main-nav__open" type="button" title="Открыть"></button>
+
+
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">Главная</a>
@@ -42,15 +62,15 @@
       <form action="https://echo.htmlacademy.ru" method="POST">
         <div class="page-form__data data">
           <label class="data__title" for="surname">Фамилия:</label>
-          <input class="data__inside" type="text" id="surname" name="surname" value="Укажите фамилию *" required>
+          <input class="data__inside" type="text" id="surname" name="surname" placeholder="Укажите фамилию *" required>
         </div>
         <div class="page-form__data data">
           <label class="data__title" for="name">Имя:</label>
-          <input class="data__inside" type="text" id="name" name="name" value="Введите ваше имя *" required>
+          <input class="data__inside" type="text" id="name" name="name" placeholder="Введите ваше имя *" required>
         </div>
         <div class="page-form__data data">
           <label class="data__title" for="patronymic">Отчество:</label>
-          <input class="data__inside" type="text" id="patronymic" name="patronymic" value="Ну и отчество тоже *">
+          <input class="data__inside" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже *">
         </div>
         <div class="page-form__interview interview">
           <h3 class="interview__title">Ваши безбашенные достижения в путешествии</h3>
@@ -83,11 +103,11 @@
         <div class="page-form__data data">
           <label class="data__title" for="telephone-number">Номер телефона</label>
           <input class="data__inside" type="text" id="telephone-number" name="telephone-number"
-            value="Номер, пожалуйста">
+          placeholder="Номер, пожалуйста">
         </div>
         <div class="page-form__data data">
           <label class="data__title" for="e-mail">Адрес почты</label>
-          <input class="data__inside" type="text" id="e-mail" name="e-mail" value="Введите почту *" required>
+          <input class="data__inside" type="text" id="e-mail" name="e-mail" placeholder="Введите почту *" required>
         </div>
         <div class="page-form__interview interview">
           <h3 class="interview__title">С каким приложением путешествовали?</h3>

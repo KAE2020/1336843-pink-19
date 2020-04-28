@@ -42,11 +42,13 @@
   }
 }
 
+/* stylelint-disable */
 #crop:checked ~ .photo-editor__radio-labels .photo-editor__svg--crop,
 #fill:checked ~ .photo-editor__radio-labels .photo-editor__svg--fill,
 #contrast:checked ~ .photo-editor__radio-labels .photo-editor__svg--contrast {
   fill: $crimson;
 }
+/* stylelint-enable */
 
 .photo-editor__indicator-scale {
   display: none;

@@ -25,6 +25,10 @@
   margin-bottom: 18px;
   outline: none;
 
+  &::placeholder {
+    color: $darkblue;
+  }
+
   &:hover {
     border: 2px solid $darkblue;
   }

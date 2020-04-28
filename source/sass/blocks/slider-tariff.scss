@@ -22,14 +22,11 @@
   background-color: #b5b9be;
 }
 
-/*.slider-tariff__content {
-  margin-top: 124px;
-  }*/
-
 .slider-tariff__content {
   margin-top: 124px;
   display: flex;
   width: auto;
+  overflow: hidden;
 }
 
 .slider-tariff__heading {
@@ -122,6 +119,7 @@
   }
 }
 
+/* stylelint-disable */
 #slide-classic:checked ~ .slider-tariff__switches label[for="slide-classic"],
 #slide-standart:checked ~ .slider-tariff__switches label[for="slide-standart"],
 #slide-comfort:checked ~ .slider-tariff__switches label[for="slide-comfort"] {
@@ -139,3 +137,4 @@
 #slide-comfort:checked ~ .slider-tariff__content {
   justify-content: flex-end;
 }
+/* stylelint-enable */

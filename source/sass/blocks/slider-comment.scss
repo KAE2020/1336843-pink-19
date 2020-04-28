@@ -42,6 +42,7 @@
   display: none;
 }
 
+/* stylelint-disable */
 #slide-review-1:checked ~ .slider-comment__switches label[for="slide-review-1"],
 #slide-review-2:checked ~ .slider-comment__switches label[for="slide-review-2"],
 #slide-review-3:checked ~ .slider-comment__switches label[for="slide-review-3"] {
@@ -53,3 +54,4 @@
 #slide-review-3:checked ~ .slider-comment__content #slide-comment-3 {
   display: block;
 }
+/* stylelint-enable */
