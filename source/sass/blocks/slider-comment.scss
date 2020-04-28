@@ -1,0 +1,57 @@
+.slider-comment {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.slider-comment__indicator {
+  display: none;
+}
+
+.slider-comment__switches {
+  @include toggle-block();
+  left: 130px;
+  top: 300px;
+}
+
+.slider-comment__label {
+  @include toggle();
+  border: 3px solid #ffffff;
+  background-color: #bec2c7;
+}
+
+.slider-comment__user {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 25px auto;
+}
+
+.slider-comment__review {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  color: $darkblue;
+}
+
+.slider-comment__text {
+  display: none;
+}
+
+/* stylelint-disable */
+#slide-review-1:checked ~ .slider-comment__switches label[for="slide-review-1"],
+#slide-review-2:checked ~ .slider-comment__switches label[for="slide-review-2"],
+#slide-review-3:checked ~ .slider-comment__switches label[for="slide-review-3"] {
+  border: 3px solid $darkblue;
+}
+
+#slide-review-1:checked ~ .slider-comment__content #slide-comment-1,
+#slide-review-2:checked ~ .slider-comment__content #slide-comment-2,
+#slide-review-3:checked ~ .slider-comment__content #slide-comment-3 {
+  display: block;
+}
+/* stylelint-enable */

@@ -1,0 +1,140 @@
+.slider-tariff {
+  position: relative;
+  width: 320px;
+  height: 505px;
+  background-image: url("/img/shape-grey2.png");
+  background-repeat: no-repeat;
+}
+
+.slider-tariff__indicator {
+  display: none;
+}
+
+.slider-tariff__switches {
+  @include toggle-block();
+  left: 130px;
+  top: 440px;
+}
+
+.slider-tariff__label {
+  @include toggle();
+  border: 3px solid $grey-background;
+  background-color: #b5b9be;
+}
+
+.slider-tariff__content {
+  margin-top: 124px;
+  display: flex;
+  width: auto;
+  overflow: hidden;
+}
+
+.slider-tariff__heading {
+  position: relative;
+  width: 280px;
+  height: 100px;
+  background-color: $darkblue;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.slider-tariff__heading--standart {
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/hitps.png");
+    background-repeat: no-repeat;
+    width: 74px;
+    height: 73px;
+    left: 0;
+    top: 0;
+  }
+}
+
+.slider-tariff__tariff {
+  font-size: 18px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+
+.slider-tariff__price {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.slider-tariff__list {
+  @include list-reset();
+  margin: 0;
+}
+
+.slider-tariff__item {
+  background-color: #ffffff;
+  width: 280px;
+  height: 59px;
+  border: 2px solid $grey-background;
+  border-top: none;
+  padding: 20px 25px 20px 25px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $darkblue;
+  position: relative;
+}
+
+.slider-tariff__item--checked {
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/icon-yes-green.svg");
+    background-repeat: no-repeat;
+    width: 31px;
+    height: 21px;
+    left: 229px;
+    top: 20px;
+  }
+}
+
+.slider-tariff__item--unchecked {
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/icon-no-red.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 26px;
+    left: 229px;
+    top: 17px;
+  }
+}
+
+/* stylelint-disable */
+#slide-classic:checked ~ .slider-tariff__switches label[for="slide-classic"],
+#slide-standart:checked ~ .slider-tariff__switches label[for="slide-standart"],
+#slide-comfort:checked ~ .slider-tariff__switches label[for="slide-comfort"] {
+  border: 3px solid $darkblue;
+}
+
+#slide-classic:checked ~ .slider-tariff__content {
+  justify-content: flex-start;
+}
+
+#slide-standart:checked ~ .slider-tariff__content {
+  justify-content: center;
+}
+
+#slide-comfort:checked ~ .slider-tariff__content {
+  justify-content: flex-end;
+}
+/* stylelint-enable */
