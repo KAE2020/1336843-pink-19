@@ -88,14 +88,20 @@ body {
   position: relative;
   z-index: 6;
 
-  &:hover path {
+  &:hover .page-header__button-on-path {
     fill: #d22856;
   }
 
-  &:active path {
+  &:active .page-header__button-on-path {
     fill: #d22856;
     opacity: 30%;
   }
+}
+
+.page-header--open .page-header__button-on:hover .page-header__button-on-path,
+.page-header--open .page-header__button-on:active .page-header__button-on-path,
+.page-header--open .page-header__button-on-path {
+  fill: transparent;
 }
 
 .page-header__intro {
@@ -105,6 +111,8 @@ body {
 .page-header__intro-secondary {
   width: 320px;
   height: 171px;
+  padding-top: 30px;
+  box-sizing: border-box;
 }
 
 .page-header__title {
