@@ -4,50 +4,74 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="page-header">
-    <a class="page-header__logo" href="index.html"><img class="page-header__logo-image"
-        src="https://via.placeholder.com/150x150" width="150" height="50" alt="Пинк">
-    </a>
+  <header class="page-header page-header--open">
+    <div class="page-header__home">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
+      </a>
+      <button class="page-header__button-off" type="button" title="Показать/скрыть"><svg class="page-header__button-on"
+          version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007"
+          enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+          <g id="miu">
+            <g id="editor_list_view_hambuger_menu_glyph">
+              <g>
+                <path class="page-header__button-on-path" id="path-1" fill="#FFFFFF"
+                  d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01h2.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01h2.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011h2.137z" />
+              </g>
+              <g>
+                <path class="page-header__button-on-path" id="path-1_1_" fill="#FFFFFF"
+                  d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01h2.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01h2.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011h2.137z" />
+              </g>
+            </g>
+          </g>
+        </svg>
+      </button>
+    </div>
     <nav class="page-header__main-nav main-nav">
-      <button class="main-nav__close" type="button">Закрыть</button>
+
+
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
-          <a href="#">Главная</a>
+          <a class="site-list__link" href="#">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Фотографии</a>
+          <a class="site-list__link" href="photo.html">Фотографии</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Конкурс</a>
+          <a class="site-list__link" href="form.html">Конкурс</a>
         </li>
         <li class="site-list__item">
-          <a href="#">HTML Academy</a>
+          <a class="site-list__link" href="https://htmlacademy.ru">HTML Academy</a>
         </li>
       </ul>
     </nav>
+    <div class="page-header__intro">
+      <p class="page-header__title">Взгляните на жизнь иначе!</p>
+      <img class="page-header__picture" src="img/iphone-hand-mobile@1x.png" width="258" height="286"
+        alt="Телефон в руке">
+    </div>
   </header>
   <main>
-
     <section class="promo-app">
       <h2 class="visually-hidden">Страница приложения, для скачивания на Ваше устройство - взгляните на мир ярче!</h2>
-      <div class="promo-app__intro">
-        <img class="promo-app__picture" src="https://via.placeholder.com/150x150" width="300" height="500"
-          alt="Телефон в руке">
-      </div>
       <a class="promo-app__link" href="#">Скачать приложение</a>
       <div class="promo-app__os">
-        <a class="promo-app__link-ios"><img class="promo-app__image" src="#" alt="Логотип Эппл"></a>
-        <a class="promo-app__link-android"><img class="promo-app__image" src="#" alt="Логотип Андроид"></a>
-        <a class="promo-app__link-windows"><img class="promo-app__image" src="#" alt="Логотип Виндовс-Фон"></a>
+        <a class="promo-app__link-ios"><img class="promo-app__image" src="img/logo-apple.svg" alt="Логотип Эппл"></a>
+        <a class="promo-app__link-android"><img class="promo-app__image" src="img/logo-android.svg"
+            alt="Логотип Андроид"></a>
+        <a class="promo-app__link-windows"><img class="promo-app__image" src="img/logo-microsoft.svg"
+            alt="Логотип Виндовс-Фон"></a>
       </div>
       <p class="promo-app__description">Доступно для iPhone, iPad, Android,
         Windows Phone, OS X, Windows 8</p>
     </section>
     <section class="advantage">
-      <h2 class="visually hidden">Преимущества приложения</h2>
+      <h2 class="visually-hidden">Преимущества приложения</h2>
       <div class="advantage__intro">
         <p class="advantage__ask-answer">Устали от серости мегаполиса?</p>
         <p class="advantage__ask-answer">Нам есть, что вам предложить!</p>
@@ -72,23 +96,26 @@
           </p>
         </li>
       </ul>
-      <img class="advantage__picture" src="https://via.placeholder.com/150x150" width="300" height="500"
-        alt="Приложение в телефоне">
+      <div class="advantage__image">
+        <img class="advantage__picture" src="img/iphone-screen-mobile@1x.png" width="157" height="320"
+          alt="Приложение в телефоне">
+      </div>
     </section>
     <section class="slider-comment">
-      <input class="slider-comment__indicator" id="slide-review-1" type="radio" checked>
-      <input class="slider-comment__indicator" id="slide-review-2" type="radio">
-      <input class="slider-comment__indicator" id="slide-review-3" type="radio">
-      <div>
-        <label for="slide-review-1"></label>
-        <label for="slide-review-2"></label>
-        <label for="slide-review-3"></label>
+      <input class="slider-comment__indicator" id="slide-review-1" type="radio" name="switch-comment" checked>
+      <input class="slider-comment__indicator" id="slide-review-2" type="radio" name="switch-comment">
+      <input class="slider-comment__indicator" id="slide-review-3" type="radio" name="switch-comment">
+      <div class="slider-comment__switches">
+        <label class="slider-comment__label" for="slide-review-1"></label>
+        <label class="slider-comment__label" for="slide-review-2"></label>
+        <label class="slider-comment__label" for="slide-review-3"></label>
       </div>
-      <div class="slider-comment__content" id="slide-comment-1">
-        <div class="slider-comment__text">
+      <div class="slider-comment__content">
+        <div class="slider-comment__text" id="slide-comment-1">
           <h3 class="slider-comment__user">Николай Петров</h3>
           <p class="slider-comment__review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-            привычные серые вещи! А еще познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
         </div>
         <div class="slider-comment__text" id="slide-comment-2">
           <h3 class="slider-comment__user">Пользователь 2</h3>
@@ -101,14 +128,14 @@
       </div>
     </section>
     <section class="slider-tariff">
-      <h2 class="visually hidden">Выбор тарифного плана с доступными опциями</h2>
-      <input class="slider-tariff__indicator" id="slide-classic" type="radio">
-      <input class="slider-tariff__indicator" id="slide-standart" type="radio" checked>
-      <input class="slider-tariff__indicator" id="slide-comfort" type="radio">
-      <div>
-        <label for="slide-classic"></label>
-        <label for="slide-standart"></label>
-        <label for="slide-comfort"></label>
+      <h2 class="visually-hidden">Выбор тарифного плана по доступным опциям</h2>
+      <input class="slider-tariff__indicator" id="slide-classic" type="radio" name="switch-tariff">
+      <input class="slider-tariff__indicator" id="slide-standart" type="radio" name="switch-tariff" checked>
+      <input class="slider-tariff__indicator" id="slide-comfort" type="radio" name="switch-tariff">
+      <div class="slider-tariff__switches">
+        <label class="slider-tariff__label" for="slide-classic"></label>
+        <label class="slider-tariff__label" for="slide-standart"></label>
+        <label class="slider-tariff__label" for="slide-comfort"></label>
       </div>
       <div class="slider-tariff__content">
         <div class="slider-tariff__text" id="slide-tariff-1">
@@ -146,9 +173,9 @@
         </div>
       </div>
     </section>
-    <footer class="page-footer">
-      <p class="page-footer__feedback">Остались вопросы? Свяжитесь с нами!</p>
-      <div class="page-footer__contacts contacts">
+    <footer class="page-route">
+      <p class="page-route__feedback">Остались вопросы? Свяжитесь с нами!</p>
+      <div class="page-route__contacts contacts">
         <div class="contacts__common">
           <h4 class="contacts__title">Звоните:</h4>
           <a class="contacts__info" href="tel:+78125556666">+7(812)555-66-66</a>
@@ -162,7 +189,9 @@
           <p class="contacts__info">ул. Большая Конюшенная, 19/8</p>
         </div>
       </div>
-      <img class="page-footer__map" src="#" alt="Место на карте">
+      <div class="page-route__conteiner">
+        <img class="page-route__map" src="/img/bg-map-mobile@1x.png" width="320" height="645" alt="Место на карте">
+      </div>
     </footer>
   </main>
 </body>

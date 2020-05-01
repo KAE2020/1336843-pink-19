@@ -1,0 +1,45 @@
+@mixin list-reset() {
+  list-style: none;
+  padding-left: 0;
+}
+
+@mixin toggle-block() {
+  position: absolute;
+  width: 65px;
+  height: 12px;
+}
+
+@mixin toggle() {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+@mixin button() {
+  box-sizing: border-box;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 280px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin title-input() {
+  color: $crimson;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+@mixin data-input() {
+  font-size: 18px;
+  color: $darkblue;
+  line-height: 30px;
+  font-weight: normal;
+  font-family: "Open Sans", "Arial", sans-serif;
+}

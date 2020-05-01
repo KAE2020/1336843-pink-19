@@ -1,0 +1,49 @@
+.reviews {
+  background-color: #ffffff;
+  width: 320px;
+}
+
+.reviews__greeting {
+  color: $darkblue;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  padding: 50px 35px;
+  margin: 0;
+}
+
+.reviews__list {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0;
+}
+
+.reviews__link {
+  display: inline-block;
+  position: relative;
+
+  &--panorama::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/panorama-day.png");
+    background-repeat: no-repeat;
+    width: 140px;
+    height: 36px;
+    top: 0;
+    left: 160px;
+  }
+}
+
+.reviews__footer {
+  font-size: 14px;
+  line-height: 30px;
+  color: $darkblue;
+  display: block;
+  width: 280px;
+  height: 90px;
+  text-align: center;
+  margin: 0 auto 20px;
+}
