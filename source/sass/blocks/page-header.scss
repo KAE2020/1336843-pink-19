@@ -2,6 +2,24 @@ body {
   width: 320px;
   font-family: "Open Sans", "Arial", sans-serif;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+}
+
+.page-header {
+  width: 320px;
+  height: auto;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-position: bottom;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+  }
 }
 
 .page-header--open {
@@ -10,7 +28,12 @@ body {
   background-image: url("../../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   z-index: 1;
-  background-position: bottom;
+  background-position: 50% 255px;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    background-image: url("../../img/bg-back-tablet@1x.jpg");
+  }
 }
 
 .page-header__home {
@@ -22,6 +45,11 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 20px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 110px;
+  }
 }
 
 .page-header--open .page-header__home {
@@ -35,6 +63,19 @@ body {
   display: block;
   z-index: 2;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/logo-pink-white-tablet.svg");
+    width: 147px;
+    height: 40px;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__logo-image {
+    display: none;
+  }
 }
 
 .page-header__button-off {
@@ -105,7 +146,14 @@ body {
 }
 
 .page-header__intro {
-  padding-top: 20px;
+  padding-top: 19px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 600px;
+  }
 }
 
 .page-header__intro-secondary {
@@ -113,6 +161,11 @@ body {
   height: 171px;
   padding-top: 30px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 260px;
+  }
 }
 
 .page-header__title {
@@ -122,9 +175,28 @@ body {
   text-align: center;
   padding: 0 30px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 50px;
+    width: 480px;
+    padding: 0;
+  }
+}
+
+.page-header__title--index {
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    padding: 70px 0 0 70px;
+    margin: 0;
+  }
 }
 
 .page-header__picture {
   display: block;
   padding-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

@@ -1,15 +1,33 @@
 .page-footer {
   width: 320px;
-  height: 285px;
+  height: 210px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    flex-direction: row;
+  }
+
+  &--index {
+    margin-top: 220px;
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 180px;
+      display: flex;
+    }
+  }
 }
 
 .page-footer__logo {
-  margin-top: 40px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
 
   &:hover .page-footer__path {
     fill: $crimson;
@@ -95,7 +113,6 @@
 
 .page-footer__developer {
   text-decoration: none;
-  margin-bottom: 35px;
 }
 
 .page-footer__developer-text {

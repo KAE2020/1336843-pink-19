@@ -1,6 +1,10 @@
 .reviews {
   background-color: #ffffff;
   width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
 }
 
 .reviews__greeting {
@@ -10,6 +14,12 @@
   font-size: 14px;
   padding: 50px 35px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    width: 460px;
+    padding: 90px 100px;
+  }
 }
 
 .reviews__list {
@@ -19,11 +29,17 @@
   align-items: flex-start;
   justify-content: center;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
 }
 
 .reviews__link {
   display: inline-block;
   position: relative;
+  width: 280px;
+  height: 180px;
 
   &--panorama::before {
     position: absolute;
@@ -34,6 +50,69 @@
     height: 36px;
     top: 0;
     left: 160px;
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+      left: 500px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+    display: block;
+  }
+}
+
+.reviews__link--panorama {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/panorama-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    width: 660px;
+    height: 510px;
+    display: block;
+  }
+}
+
+.reviews__link--car {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/photo-car-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.reviews__link--drumset {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/photo-drumset-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.reviews__link--window {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/photo-window-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.reviews__link--fair {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/photo-fair-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.reviews__link--pov {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/photo-pov-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.reviews__link--wing {
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/photo-wing-tablet@1x.jpg");
+    background-repeat: no-repeat;
   }
 }
 

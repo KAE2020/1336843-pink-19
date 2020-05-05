@@ -1,17 +1,62 @@
-.story__conteiner {
+.story:not(:first-child) {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 456px;
+    display: block;
+    margin: 10px;
+  }
+}
+
+.story__container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+.story__container--panorama {
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    margin-bottom: 20px;
+  }
+}
+
 .story__picture {
   vertical-align: middle;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.story__picture--panorama {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .story__detail {
   width: 280px;
   margin: 0 auto 20px;
   background-color: $grey-background;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    height: 155px;
+    width: 300px;
+  }
+}
+
+.story__detail--panorama {
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    height: 121px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto 20px;
+  }
 }
 
 .story__name {
@@ -19,6 +64,16 @@
   font-weight: bold;
   margin: 0;
   padding: 20px 0 5px 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 0 5px 27px;
+  }
+}
+
+.story__name--panorama {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }
 
 .story__name-date {
@@ -29,7 +84,22 @@
   padding: 0 0 15px 18px;
   color: $darkblue;
   font-size: 14px;
+  line-height: 24px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 27px;
+    display: block;
+    height: 60px;
+    padding-bottom: 0;
+  }
+}
+
+.story__comment--panorama {
+  @media (min-width: $tablet-width) {
+    order: 3;
+    padding: 0 0 25px 27px;
+  }
 }
 
 .story__like {
@@ -37,11 +107,35 @@
   padding: 0 0 25px 50px;
   color: $crimson;
   position: relative;
+  text-transform: uppercase;
+  font-size: 12px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 27px;
+  }
+}
+
+.story__like--panorama {
+  @media (min-width: $tablet-width) {
+    padding: 30px 60px 10px 0;
+    order: 2;
+  }
 }
 
 .story__svg {
   fill: $crimson;
   position: absolute;
-  top: 6px;
+  top: 3px;
   left: 18px;
+
+  @media (min-width: $tablet-width) {
+    left: 255px;
+  }
+}
+
+.story__svg--panorama {
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    left: 130px;
+  }
 }
