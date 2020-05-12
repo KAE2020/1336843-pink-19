@@ -217,7 +217,7 @@
     </section>
     <section class="photo-editor">
       <h2 class="visually-hidden">Редактор фотографий перед публикацией</h2>
-      <form action="https://echo.htmlacademy.ru">
+      <form class="photo-editor__form" action="https://echo.htmlacademy.ru">
         <img class="photo-editor__object" src="/img/photo-road-mobile@1x.jpg" width="280" height="374"
           alt="Зимняя дорога">
         <input class="photo-editor__indicator" type="radio" id="crop" name="editor-toggle" checked>
@@ -255,6 +255,21 @@
         </div>
         <input class="photo-editor__indicator-scale" type="range" id="scale" name="scale">
         <label class="photo-editor__label-scale" for="scale"></label>
+        <div class="photo-editor__indicator-tablet">
+          <div class="photo-editor__indicator-tablet-border">
+            <input class="photo-editor__indicator-scale" type="range" id="scale" name="scale">
+            <label class="photo-editor__label-scale-tablet photo-editor__label-scale-tablet--crop" for="scale"></label>
+          </div>
+          <div class="photo-editor__indicator-tablet-border">
+            <input class="photo-editor__indicator-scale" type="range" id="scale" name="scale">
+            <label class="photo-editor__label-scale-tablet photo-editor__label-scale-tablet--fill" for="scale"></label>
+          </div>
+          <div class="photo-editor__indicator-tablet-border">
+            <input class="photo-editor__indicator-scale" type="range" id="scale" name="scale">
+            <label class="photo-editor__label-scale-tablet photo-editor__label-scale-tablet--contrast"
+              for="scale"></label>
+          </div>
+        </div>
         <div class="photo-editor__buttons">
           <button class="photo-editor__button photo-editor__button--send" type="submit">Запостить</button>
           <button class="photo-editor__button photo-editor__button--cancel" type="reset">Отмена</button>

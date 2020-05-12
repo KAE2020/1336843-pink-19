@@ -9,16 +9,19 @@
   margin-top: 40px;
 
   @media (min-width: $tablet-width) {
-    width: 660px;
+    width: 620px;
+    height: 128px;
     flex-direction: row;
+    margin: 0 auto;
   }
 
   &--index {
     margin-top: 220px;
     display: none;
+    height: 128px;
 
     @media (min-width: $tablet-width) {
-      margin-top: 180px;
+      margin-top: 398px;
       display: flex;
     }
   }

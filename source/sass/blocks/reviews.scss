@@ -125,4 +125,10 @@
   height: 90px;
   text-align: center;
   margin: 0 auto 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    width: 500px;
+    margin: 63px auto 38px;
+  }
 }

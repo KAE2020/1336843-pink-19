@@ -1,6 +1,17 @@
 .page-form {
   width: 320px;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+}
+
+.page-form__main {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .page-form__greeting {
@@ -10,6 +21,82 @@
   width: 280px;
   text-align: center;
   margin: 50px auto 45px;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    margin-bottom: 0;
+  }
+}
+
+.page-form__contacts {
+  @media (min-width: $tablet-width) {
+    order: 5;
+    width: 620px;
+    height: 310px;
+    margin: 0 auto 65px;
+    border: 2px solid $grey-border-form;
+    border-radius: 2px;
+    box-sizing: border-box;
+    position: relative;
+  }
+}
+
+.page-form__contacts::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/icon-phone-tablet.png");
+    background-position: center;
+    background-color: $grey-border-form;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 58px;
+    left: 497.5px;
+    margin-top: 50px;
+  }
+}
+
+.page-form__contacts::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    background-image: url("../../img/icon-mail-tablet.png");
+    background-position: center;
+    background-color: $grey-border-form;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 57px;
+    left: 497.5px;
+    margin-top: -124px;
+  }
+}
+
+.page-form__title {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+    @include title-input();
+    height: 20px;
+    width: 260px;
+    margin: -10px auto 38px;
+    background-color: #ffffff;
+    text-align: center;
+  }
+}
+
+.page-form__greeting--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
 }
 
 .page-form__send {
@@ -37,6 +124,10 @@
   &:disabled {
     background-color: $grey-border-form;
   }
+
+  @media (min-width: $tablet-width) {
+    order: 9;
+  }
 }
 
 .page-form__requred {
@@ -48,5 +139,11 @@
 
   &--red {
     color: $crimson;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 10;
+    width: 185px;
+    margin: -75px 20px 70px auto;
   }
 }

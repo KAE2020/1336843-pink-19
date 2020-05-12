@@ -3,6 +3,11 @@
   width: 320px;
   height: 285px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 250px;
+  }
 }
 
 .slider-comment__indicator {
@@ -11,8 +16,13 @@
 
 .slider-comment__switches {
   @include toggle-block();
-  left: 130px;
-  top: 250px;
+  top: 257px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 307px;
+    margin-right: 307px;
+    top: 218px;
+  }
 }
 
 .slider-comment__label {
@@ -26,16 +36,42 @@
   font-weight: bold;
   text-align: center;
   margin: 25px auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    margin: 125px 200px 0;
+    width: 260px;
+  }
+}
+
+.slider-comment__business {
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  color: $darkblue;
+  margin-top: 60px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .slider-comment__review {
   display: block;
   width: 280px;
+  height: 100px;
   margin: 0 auto;
   text-align: center;
   font-size: 14px;
   line-height: 30px;
   color: $darkblue;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    font-size: 18px;
+    margin-top: 100px;
+  }
 }
 
 .slider-comment__text {
