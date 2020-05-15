@@ -11,6 +11,16 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__common--third {
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
 }
 
 .contacts__title {

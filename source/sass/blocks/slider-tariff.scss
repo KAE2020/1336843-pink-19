@@ -10,6 +10,12 @@
     height: 397px;
     background-image: url("../../img/shape-grey-tablet.png");
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 534px;
+    background-image: url("../../img/shape-grey-desktop.png");
+  }
 }
 
 .slider-tariff__indicator {
@@ -41,6 +47,11 @@
     margin: 110px auto 0;
     width: 620px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin-top: 164px;
+  }
 }
 
 .slider-tariff__text--tablet {
@@ -50,6 +61,11 @@
     width: 155px;
     display: block;
     margin-top: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 236px;
+    margin-top: 96px;
   }
 }
 
@@ -69,6 +85,12 @@
   @media (min-width: $tablet-width) {
     width: 155px;
     height: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 235px;
+    height: 98px;
+    margin: 0;
   }
 }
 
@@ -98,6 +120,12 @@
       left: 0;
       top: 0;
     }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/bg-hit-desktop.png");
+      width: 74px;
+      height: 73px;
+    }
   }
 }
 
@@ -120,6 +148,11 @@
     font-size: 16px;
     padding-left: 5px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding-left: 5px;
+  }
 }
 
 .slider-tariff__price {
@@ -133,14 +166,22 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
   }
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+  }
 }
 
 .slider-tariff__list {
   @include list-reset();
   margin: 0;
+}
 
-  &--tablet {
-    border-top: 2px solid $grey-border-form;
+.slider-tariff__list--tablet {
+  border-top: 2px solid $grey-border-form;
+
+  @media (min-width: $desktop-width) {
+    width: 235px;
   }
 }
 
@@ -170,6 +211,11 @@
     width: 155px;
     height: 46px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 235px;
+    height: 62px;
+  }
 }
 
 .slider-tariff__item--tablet {
@@ -178,6 +224,11 @@
     padding: 12px 17px;
     text-transform: none;
     border-left: 2px solid $grey-border-form;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding: 19px 25px;
   }
 }
 
@@ -196,6 +247,11 @@
       left: 60px;
       top: 10px;
     }
+
+    @media (min-width: $desktop-width) {
+      left: 100px;
+      top: 22px;
+    }
   }
 }
 
@@ -213,6 +269,11 @@
     @media (min-width: $tablet-width) {
       left: 60px;
       top: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 100px;
+      top: 22px;
     }
   }
 }

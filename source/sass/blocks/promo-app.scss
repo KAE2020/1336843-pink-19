@@ -9,6 +9,12 @@
     margin-bottom: 108px;
     width: 340px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -431px;
+    margin-left: 110px;
+    margin-bottom: 160px;
+  }
 }
 
 .promo-app__link {

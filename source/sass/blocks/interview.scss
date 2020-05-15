@@ -11,19 +11,31 @@
   }
 }
 
-.interview--4 {
+.interview--2 {
   @media (min-width: $tablet-width) {
-    order: 4;
+    order: 2;
     margin-bottom: 65px;
     box-sizing: border-box;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 434px;
+    height: 300px;
+    margin-top: -9px;
+    margin-left: 70px;
+  }
 }
 
-.interview--7 {
+.interview--4 {
   @media (min-width: $tablet-width) {
-    order: 7;
+    order: 4;
     box-sizing: border-box;
     margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    height: 230px;
   }
 }
 
@@ -69,11 +81,67 @@
   @media (min-width: $tablet-width) {
     margin-left: 60px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 820px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.interview__list--radio {
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .interview__item {
   @include data-input();
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+  }
+}
+
+.interview__item--shark {
+  @media (min-width: $desktop-width) {
+    order: 1;
+    margin-right: 20px;
+  }
+}
+
+.interview__item--chuck {
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
+
+.interview__item--tower {
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
+
+.interview__item--beach {
+  @media (min-width: $desktop-width) {
+    order: 4;
+    margin-right: 20px;
+  }
+}
+
+.interview__item--souvenir {
+  @media (min-width: $desktop-width) {
+    order: 5;
+  }
+}
+
+.interview__item--hotel {
+  @media (min-width: $desktop-width) {
+    order: 6;
+  }
 }
 
 .interview__check,
@@ -86,6 +154,10 @@
   margin-top: 5px;
   height: 75px;
   display: block;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+  }
 }
 
 .interview__check + label::before {

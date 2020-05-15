@@ -2,6 +2,15 @@
   @include list-reset();
   position: relative;
   margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    position: absolute;
+    width: 624px;
+    justify-content: space-between;
+    top: -90px;
+    left: 450px;
+  }
 }
 
 .site-list__item {
@@ -17,6 +26,12 @@
 
   @media (min-width: $tablet-width) {
     width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    border: none;
+    background-color: $transparent;
   }
 }
 
@@ -35,5 +50,27 @@
   &:active {
     color: $crimson;
     opacity: 30%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: auto;
+    height: 32px;
+    text-transform: none;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+}
+
+.site-list__link--photos {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid #ffffff;
+  }
+}
+
+.site-list__link--competition {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid #ffffff;
   }
 }
