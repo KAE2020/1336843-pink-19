@@ -5,8 +5,9 @@
 
 @mixin toggle-block() {
   position: absolute;
-  width: 65px;
-  height: 12px;
+  margin-left: 137px;
+  margin-right: 137px;
+  width: 46px;
 }
 
 @mixin toggle() {

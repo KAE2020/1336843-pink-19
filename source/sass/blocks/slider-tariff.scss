@@ -2,8 +2,20 @@
   position: relative;
   width: 320px;
   height: 505px;
-  background-image: url("/img/shape-grey2.png");
+  background-image: url("../../img/shape-grey2.png");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 397px;
+    background-image: url("../../img/shape-grey-tablet.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 534px;
+    background-image: url("../../img/shape-grey-desktop.png");
+  }
 }
 
 .slider-tariff__indicator {
@@ -12,8 +24,11 @@
 
 .slider-tariff__switches {
   @include toggle-block();
-  left: 130px;
   top: 440px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .slider-tariff__label {
@@ -27,19 +42,63 @@
   display: flex;
   width: auto;
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    margin: 110px auto 0;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin-top: 164px;
+  }
+}
+
+.slider-tariff__text--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    width: 155px;
+    display: block;
+    margin-top: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 236px;
+    margin-top: 96px;
+  }
 }
 
 .slider-tariff__heading {
   position: relative;
   width: 280px;
   height: 100px;
+  border: 1px solid $grey-border-form;
+  box-sizing: border-box;
   background-color: $darkblue;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   margin: 0 auto;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 155px;
+    height: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 235px;
+    height: 98px;
+    margin: 0;
+  }
+}
+
+.slider-tariff__heading--base {
+  @media (min-width: $tablet-width) {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
 }
 
 .slider-tariff__heading--standart {
@@ -52,6 +111,28 @@
     height: 73px;
     left: 0;
     top: 0;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/bg-hit-tablet.png");
+      background-repeat: no-repeat;
+      width: 61px;
+      height: 61px;
+      left: 0;
+      top: 0;
+    }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/bg-hit-desktop.png");
+      width: 74px;
+      height: 73px;
+    }
+  }
+}
+
+.slider-tariff__heading--unlimited {
+  @media (min-width: $tablet-width) {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
   }
 }
 
@@ -62,6 +143,16 @@
   text-transform: uppercase;
   font-weight: bold;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    padding-left: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding-left: 5px;
+  }
 }
 
 .slider-tariff__price {
@@ -71,6 +162,14 @@
   color: #ffffff;
   text-transform: uppercase;
   font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+  }
 }
 
 .slider-tariff__list {
@@ -78,19 +177,59 @@
   margin: 0;
 }
 
+.slider-tariff__list--tablet {
+  border-top: 2px solid $grey-border-form;
+
+  @media (min-width: $desktop-width) {
+    width: 235px;
+  }
+}
+
+.slider-tariff__list--last li {
+  @media (min-width: $tablet-width) {
+    border-right: 2px solid $grey-border-form;
+  }
+}
+
 .slider-tariff__item {
   background-color: #ffffff;
   width: 280px;
   height: 59px;
-  border: 2px solid $grey-background;
+  border: 1px solid $grey-border-form;
+  border-bottom: 2px solid $grey-border-form;
   border-top: none;
-  padding: 20px 25px 20px 25px;
+  padding: 20px 25px;
   margin: 0 auto;
   box-sizing: border-box;
   font-size: 14px;
   text-transform: uppercase;
   color: $darkblue;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 0;
+    width: 155px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 235px;
+    height: 62px;
+  }
+}
+
+.slider-tariff__item--tablet {
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    padding: 12px 17px;
+    text-transform: none;
+    border-left: 2px solid $grey-border-form;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding: 19px 25px;
+  }
 }
 
 .slider-tariff__item--checked {
@@ -103,6 +242,16 @@
     height: 21px;
     left: 229px;
     top: 20px;
+
+    @media (min-width: $tablet-width) {
+      left: 60px;
+      top: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 100px;
+      top: 22px;
+    }
   }
 }
 
@@ -116,6 +265,16 @@
     height: 26px;
     left: 229px;
     top: 17px;
+
+    @media (min-width: $tablet-width) {
+      left: 60px;
+      top: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 100px;
+      top: 22px;
+    }
   }
 }
 

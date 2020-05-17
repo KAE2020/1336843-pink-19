@@ -2,6 +2,19 @@
   background-color: $darkblue;
   width: 320px;
   height: 271px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -379px;
+    background-color: $transparent;
+    margin-bottom: 108px;
+    width: 340px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -431px;
+    margin-left: 110px;
+    margin-bottom: 160px;
+  }
 }
 
 .promo-app__link {
@@ -10,6 +23,11 @@
   text-decoration: none;
   color: #ffffff;
   margin: 28px auto 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-bottom: 48px;
+  }
 
   &:hover {
     background-color: #ffffff;
@@ -37,4 +55,11 @@
   text-align: center;
   margin: 0;
   padding: 25px 40px 35px 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    width: 300px;
+    padding-left: 20px;
+    padding-top: 30px;
+  }
 }

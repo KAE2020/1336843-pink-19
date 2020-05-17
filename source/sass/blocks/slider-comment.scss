@@ -1,8 +1,56 @@
 .slider-comment {
   position: relative;
   width: 320px;
-  height: 320px;
+  height: 285px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+.slider-comment__arrows {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 940px;
+    height: 30px;
+    left: 130px;
+    top: 31px;
+  }
+}
+
+.slider-comment__arrow {
+  @media (min-width: $desktop-width) {
+    display: block;
+    background-color: $transparent;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-top: 2px solid $grey-arrow;
+    border-right: 2px solid $grey-arrow;
+    outline: none;
+  }
+}
+
+.slider-comment__arrow--left {
+  @media (min-width: $desktop-width) {
+    transform: rotate(-135deg);
+  }
+}
+
+.slider-comment__arrow--right {
+  @media (min-width: $desktop-width) {
+    transform: rotate(45deg);
+  }
 }
 
 .slider-comment__indicator {
@@ -11,8 +59,17 @@
 
 .slider-comment__switches {
   @include toggle-block();
-  left: 130px;
-  top: 300px;
+  top: 257px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 307px;
+    margin-right: 307px;
+    top: 218px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .slider-comment__label {
@@ -26,16 +83,62 @@
   font-weight: bold;
   text-align: center;
   margin: 25px auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    margin: 125px 200px 0;
+    width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 125px 470px 0;
+  }
+}
+
+.slider-comment__business {
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 14px;
+  color: $darkblue;
+  margin-top: 60px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .slider-comment__review {
   display: block;
   width: 280px;
+  height: 100px;
   margin: 0 auto;
   text-align: center;
   font-size: 14px;
   line-height: 30px;
   color: $darkblue;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    font-size: 18px;
+    margin-top: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 190px;
+  }
+}
+
+.slider-comment__review::before {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    width: 79px;
+    height: 63px;
+    background-image: url("../../img/icon-quotes.svg");
+    top: -120px;
+    left: 563px;
+  }
 }
 
 .slider-comment__text {

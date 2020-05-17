@@ -3,6 +3,14 @@
   height: 393px;
   position: relative;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .page-route__feedback {
@@ -10,7 +18,20 @@
   color: $darkblue;
   text-align: center;
   padding: 35px;
+  font-weight: 300;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    padding: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    width: 500px;
+    padding: 0;
+    margin: 65px auto;
+  }
 }
 
 .page-route__conteiner {
@@ -18,16 +39,47 @@
   height: 220px;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    width: 660px;
+    height: 368px;
+    background-image: url("../../img/bg-map-tablet@1x.jpg");
+    background-position: -20px 71%;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: 500px;
+    background-image: url("../../img/bg-map-desktop@1x.jpg");
+    background-position: 0 -278px;
+  }
+
   &::before {
     position: absolute;
     content: "";
-    background-image: url("../../img/triangle-white-footer.png");
+    background-image: url("../../img/triangle-white-mobile.png");
     background-repeat: no-repeat;
     width: 320px;
     height: 123px;
     left: 0;
     top: -81px;
     z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../../img/triangle-white-tablet.png");
+      width: 660px;
+      height: 123px;
+      z-index: 0;
+      top: -50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../../img/triangle-white-desktop.png");
+      width: 1200px;
+      height: 123px;
+      z-index: 2;
+      top: -21px;
+    }
   }
 
   &::after {
@@ -39,6 +91,16 @@
     height: 35px;
     left: 142px;
     top: 103px;
+
+    @media (min-width: $tablet-width) {
+      left: 312px;
+      top: 197px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 582px;
+      top: 260px;
+    }
   }
 }
 
@@ -46,4 +108,8 @@
   position: relative;
   top: -436px;
   z-index: -2;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
