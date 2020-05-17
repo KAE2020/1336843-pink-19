@@ -1,0 +1,76 @@
+.site-list {
+  @include list-reset();
+  position: relative;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    position: absolute;
+    width: 624px;
+    justify-content: space-between;
+    top: -90px;
+    left: 450px;
+  }
+}
+
+.site-list__item {
+  width: 320px;
+  height: 64px;
+  box-sizing: border-box;
+  background-color: $darkblue;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid $dark-grey-border;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 660px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    border: none;
+    background-color: $transparent;
+  }
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Open Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+
+  &:hover {
+    color: $crimson;
+  }
+
+  &:active {
+    color: $crimson;
+    opacity: 30%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: auto;
+    height: 32px;
+    text-transform: none;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+}
+
+.site-list__link--photos {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid #ffffff;
+  }
+}
+
+.site-list__link--competition {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid #ffffff;
+  }
+}

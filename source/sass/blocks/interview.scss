@@ -1,0 +1,224 @@
+.interview {
+  background-color: $grey-background;
+  margin-top: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border: 2px solid $grey-border-form;
+    border-radius: 2px;
+  }
+}
+
+.interview--2 {
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-bottom: 65px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 434px;
+    height: 300px;
+    margin-top: -9px;
+    margin-left: 70px;
+  }
+}
+
+.interview--4 {
+  @media (min-width: $tablet-width) {
+    order: 4;
+    box-sizing: border-box;
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    height: 230px;
+  }
+}
+
+.interview__title {
+  @include title-input();
+  line-height: 18px;
+  text-align: center;
+  width: 250px;
+  margin: 0 auto;
+  padding: 38px 0;
+}
+
+.interview__title--first {
+  @media (min-width: $tablet-width) {
+    width: 365px;
+    height: 20px;
+    margin-top: -49px;
+    border: 1px solid #ffffff;
+    display: block;
+    background-color: #ffffff;
+  }
+}
+
+.interview__title--second {
+  @media (min-width: $tablet-width) {
+    width: 436px;
+    height: 20px;
+    margin-top: -49px;
+    padding-bottom: 48px;
+    border: 1px solid #ffffff;
+    display: block;
+    background-color: #ffffff;
+  }
+}
+
+.interview__list {
+  @include list-reset();
+  width: 280px;
+  margin: 0 auto 32px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 820px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.interview__list--radio {
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.interview__item {
+  @include data-input();
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
+  }
+}
+
+.interview__item--shark {
+  @media (min-width: $desktop-width) {
+    order: 1;
+    margin-right: 20px;
+  }
+}
+
+.interview__item--chuck {
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
+
+.interview__item--tower {
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
+
+.interview__item--beach {
+  @media (min-width: $desktop-width) {
+    order: 4;
+    margin-right: 20px;
+  }
+}
+
+.interview__item--souvenir {
+  @media (min-width: $desktop-width) {
+    order: 5;
+  }
+}
+
+.interview__item--hotel {
+  @media (min-width: $desktop-width) {
+    order: 6;
+  }
+}
+
+.interview__check,
+.interview__radio-check {
+  display: none;
+}
+
+.interview__description {
+  padding-left: 70px;
+  margin-top: 5px;
+  height: 75px;
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
+  }
+}
+
+.interview__check + label::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: 2px solid $grey-border-form;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  border-radius: 2px;
+}
+
+.interview__check + label:hover::before {
+  border: 2px solid $darkblue;
+}
+
+.interview__check + label:active::before {
+  border: 2px solid $crimson;
+}
+
+.interview__check:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 10px;
+  border-bottom: 2px solid $crimson;
+  border-left: 2px solid $crimson;
+  transform: rotate(-45deg);
+  top: 11px;
+  left: 9px;
+}
+
+.interview__radio-check + label::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  border: 2px solid $grey-border-form;
+  border-radius: 50%;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+}
+
+.interview__radio-check:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: $crimson;
+  border-radius: 50%;
+  top: 39px / 2 - 15px / 2;
+  left: 39px / 2 - 15px / 2;
+}
+
+.interview__radio-check + label:hover::before {
+  border: 2px solid $darkblue;
+}
+
+.interview__radio-check + label:active::before {
+  border: 2px solid $crimson;
+}
