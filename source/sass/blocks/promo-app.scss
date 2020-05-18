@@ -24,9 +24,11 @@
   color: #ffffff;
   margin: 28px auto 30px;
 
+
   @media (min-width: $tablet-width) {
     width: 300px;
     margin-bottom: 48px;
+    z-index: 2;
   }
 
   &:hover {
