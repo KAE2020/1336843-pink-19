@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
@@ -62,10 +63,10 @@
         <li class="reviews__item story">
           <a class="reviews__link reviews__link--panorama" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg">
-              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg">
+              <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
               <img class="story__picture story__picture--panorama" src="img/panorama-mobile@1x.jpg"
-                srcset="img/panorama-mobile@2x.jpg" width="320" height="137" alt="Прыжок с высоты">
+                srcset="img/panorama-mobile@2x.jpg 2x" width="320" height="137" alt="Прыжок с высоты">
             </picture>
           </a>
           <div class="story__detail story__detail--panorama">
@@ -86,11 +87,11 @@
           </div>
         </li>
         <li class="reviews__item story">
-          <a class="reviews__link reviews__link--car" href="#">
+          <a class="reviews__link" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg">
-              <img class="story__picture" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg"
+              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
+              <img class="story__picture" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x"
                 width="280" height="180" alt="Вид на горы">
             </picture>
           </a>
@@ -109,13 +110,13 @@
           </div>
         </li>
         <li class="reviews__item story">
-          <a class="reviews__link reviews__link--drumset" href="#">
+          <a class="reviews__link" href="#">
             <picture>
               <source media="(min-width: 1200px)"
-                srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg">
+                srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
-                srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg">
-              <img class="story__picture" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg"
+                srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="story__picture" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x"
                 width="280" height="180" alt="Вид на горы">
             </picture>
           </a>
@@ -134,13 +135,13 @@
           </div>
         </li>
         <li class="reviews__item story">
-          <a class="reviews__link reviews__link--window" href="#">
+          <a class="reviews__link" href="#">
             <picture>
               <source media="(min-width: 1200px)"
-                srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg">
+                srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
               <source media="(min-width: 660px)"
-                srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg">
-              <img class="story__picture" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg"
+                srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
+              <img class="story__picture" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x"
                 width="280" height="180" alt="Вид на горы">
             </picture>
           </a>
@@ -159,11 +160,11 @@
           </div>
         </li>
         <li class="reviews__item story">
-          <a class="reviews__link reviews__link--fair" href="#">
+          <a class="reviews__link" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg">
-              <img class="story__picture" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg"
+              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="story__picture" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x"
                 width="280" height="180" alt="Вид на горы">
             </picture>
           </a>
@@ -182,11 +183,11 @@
           </div>
         </li>
         <li class="reviews__item story">
-          <a class="reviews__link reviews__link--pov" href="#">
+          <a class="reviews__link" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg">
-              <img class="story__picture" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg"
+              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="story__picture" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x"
                 width="280" height="180" alt="Вид на горы">
             </picture>
           </a>
@@ -205,11 +206,11 @@
           </div>
         </li>
         <li class="reviews__item story">
-          <a class="reviews__link reviews__link--wing" href="#">
+          <a class="reviews__link" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg">
-              <img class="story__picture" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg"
+              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="story__picture" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x"
                 width="280" height="180" alt="Вид на рассвет">
             </picture>
           </a>
@@ -234,9 +235,9 @@
       <h2 class="visually-hidden">Редактор фотографий перед публикацией</h2>
       <form class="photo-editor__form" action="https://echo.htmlacademy.ru">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg">
-          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg">
-          <img class="photo-editor__object" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg"
+          <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg, img/photo-road-tablet@2x.jpg 2x">
+          <img class="photo-editor__object" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x"
             width="280" height="374" alt="Зимняя дорога">
         </picture>
         <input class="photo-editor__indicator" type="radio" id="crop" name="editor-toggle" checked>

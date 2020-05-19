@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <link href="css/style.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width">
 </head>
 
 <body>
@@ -50,14 +51,15 @@
     </nav>
     <p class="page-header__title page-header__title--index">Взгляните на жизнь иначе!</p>
     <picture>
-      <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png">
-      <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png">
-      <img class="page-header__picture" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png"
+      <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png 2x">
+      <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png 2x">
+      <img class="page-header__picture" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x"
         width="258" height="286" alt="Телефон в руке">
     </picture>
   </header>
   <main>
     <section class="promo-app">
+
       <h2 class="visually-hidden">Страница приложения, для скачивания на Ваше устройство - взгляните на мир ярче!</h2>
       <a class="promo-app__link" href="#">Скачать приложение</a>
       <div class="promo-app__os">
@@ -78,24 +80,34 @@
       </div>
       <ul class="advantage__list">
         <li class="advantage__item advantage__item--grey">
+          <img class="advantage__picture-smile" src="img/iphone-screen-1-desktop@1x.png"
+            srcset="img/iphone-screen-1-desktop@2x.png 2x" width="300px" height="300px">
           <h3 class="advantage__title">Поднимает настроение</h3>
           <p class="advantage__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
             несколько кликов!</p>
         </li>
         <li class="advantage__item advantage__item--pink">
+          <img class="advantage__picture-smile" src="img/iphone-screen-2-desktop@1x.png"
+            srcset="img/iphone-screen-2-desktop@2x.png 2x" width="300px" height="300px">
           <h3 class="advantage__title">Меняет мир вокруг</h3>
           <p class="advantage__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br>
             усилить эффект</p>
         </li>
         <li class="advantage__item advantage__item--smile">
+          <img class="advantage__picture-smile" src="img/iphone-screen-3-desktop@1x.png"
+            srcset="img/iphone-screen-3-desktop@2x.png 2x" width="300px" height="300px">
           <h3 class="advantage__title">Заводит новых друзей</h3>
           <p class="advantage__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
             новых</p>
         </li>
       </ul>
       <div class="advantage__image">
-        <img class="advantage__picture" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png"
-          width="157" height="320" alt="Приложение в телефоне">
+        <picture>
+          <source media="(min-width: 660px)"
+            srcset="img/iphone-screen-3-tablet@1x.png, img/iphone-screen-3-tablet@2x.png 2x">
+          <img class="advantage__picture" src="img/iphone-screen-mobile@1x.png"
+            srcset="img/iphone-screen-mobile@2x.png 2x" width="157" height="320" alt="Приложение в телефоне">
+        </picture>
       </div>
     </section>
     <aside class="advantage__discovery">
@@ -207,7 +219,7 @@
         </div>
       </div>
       <div class="page-route__conteiner">
-        <img class="page-route__map" src="/img/bg-map-mobile@1x.png" width="320" height="645" alt="Место на карте">
+        <img class="page-route__map" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Место на карте">
       </div>
     </section>
     <footer class="page-footer page-footer--index">

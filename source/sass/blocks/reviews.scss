@@ -97,48 +97,6 @@
   }
 }
 
-.reviews__link--car {
-  @media (min-width: $tablet-width) {
-    background-image: url("../../img/photo-car-desktop@1x.jpg");
-    background-repeat: no-repeat;
-  }
-}
-
-.reviews__link--drumset {
-  @media (min-width: $tablet-width) {
-    background-image: url("../../img/photo-drumset-desktop@1x.jpg");
-    background-repeat: no-repeat;
-  }
-}
-
-.reviews__link--window {
-  @media (min-width: $tablet-width) {
-    background-image: url("../../img/photo-window-desktop@1x.jpg");
-    background-repeat: no-repeat;
-  }
-}
-
-.reviews__link--fair {
-  @media (min-width: $tablet-width) {
-    background-image: url("../../img/photo-fair-desktop@1x.jpg");
-    background-repeat: no-repeat;
-  }
-}
-
-.reviews__link--pov {
-  @media (min-width: $tablet-width) {
-    background-image: url("../../img/photo-pov-desktop@1x.jpg");
-    background-repeat: no-repeat;
-  }
-}
-/*
-.reviews__link--wing {
-  @media (min-width: $tablet-width) {
-    background-image: url("../../img/photo-wing-desktop@1x.jpg");
-    background-repeat: no-repeat;
-  }
-}*/
-
 .reviews__footer {
   font-size: 14px;
   line-height: 30px;

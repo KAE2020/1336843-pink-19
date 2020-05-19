@@ -2,6 +2,7 @@
   background-color: $darkblue;
   width: 320px;
   height: 271px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin-top: -379px;
@@ -27,8 +28,15 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
+    /*margin-bottom: 48px;*/
+    position: absolute;
+    left: 20px;
+    top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 48px;
-    z-index: 2;
+    position: static;
   }
 
   &:hover {
@@ -48,6 +56,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 152px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .promo-app__description {
