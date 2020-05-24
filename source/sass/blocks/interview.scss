@@ -1,6 +1,6 @@
 .interview {
   background-color: $grey-background;
-  margin-top: 25px;
+  margin-top: 24px;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -14,14 +14,14 @@
 .interview--2 {
   @media (min-width: $tablet-width) {
     order: 2;
-    margin-bottom: 65px;
+    margin-bottom: 64px;
     box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
     width: 434px;
     height: 300px;
-    margin-top: -9px;
+    margin-top: -5px;
     margin-left: 70px;
   }
 }
@@ -31,11 +31,12 @@
     order: 4;
     box-sizing: border-box;
     margin-bottom: 65px;
+    height: 554px;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
-    height: 230px;
+    height: 232px;
   }
 }
 
@@ -45,7 +46,7 @@
   text-align: center;
   width: 250px;
   margin: 0 auto;
-  padding: 38px 0;
+  padding: 38px 0 37px;
 }
 
 .interview__title--first {
@@ -56,6 +57,7 @@
     border: 1px solid #ffffff;
     display: block;
     background-color: #ffffff;
+    padding-bottom: 44px;
   }
 }
 
@@ -64,10 +66,14 @@
     width: 436px;
     height: 20px;
     margin-top: -49px;
-    padding-bottom: 48px;
+    padding-bottom: 39px;
     border: 1px solid #ffffff;
     display: block;
     background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 41px;
   }
 }
 
@@ -80,20 +86,23 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 60px;
+    margin-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 820px;
+    width: 871px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 57px;
   }
 }
 
 .interview__list--radio {
   @media (min-width: $desktop-width) {
     flex-direction: column;
+    margin-left: 73px;
   }
 }
 
@@ -150,21 +159,36 @@
 }
 
 .interview__description {
-  padding-left: 70px;
-  margin-top: 5px;
+  padding-left: 69px;
+  margin-top: 7px;
   height: 75px;
   display: block;
 
+  &--os {
+    height: 70px;
+    line-height: 21px;
+    padding-left: 71px;
+
+    @media (min-width: $tablet-width) {
+      height: 67px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 58px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-left: 50px;
+    padding-left: 60px;
+    margin-top: 6px;
   }
 }
 
 .interview__check + label::before {
   content: "";
   position: absolute;
-  width: 35px;
-  height: 35px;
+  width: 36px;
+  height: 36px;
   border: 2px solid $grey-border-form;
   background-color: #ffffff;
   top: 0;

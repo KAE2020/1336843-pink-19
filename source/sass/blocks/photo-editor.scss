@@ -5,12 +5,14 @@
     width: 660px;
     position: relative;
     height: 511px;
+    margin-bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1200px;
     height: 514px;
     background-color: #ffffff;
+    margin-bottom: 65px;
   }
 }
 
@@ -47,12 +49,12 @@
 }
 
 .photo-editor__radio-labels {
-  width: 200px;
+  width: 201px;
   height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
+  margin: 16px 65px 20px 54px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -69,7 +71,7 @@
 
   &--fill {
     width: 48px;
-    height: 43px;
+    height: 48px;
   }
 
   &--contrast {
@@ -129,19 +131,19 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin-left: 25px;
+    margin: 41px 0 0 27px;
   }
 
   @media (min-width: $desktop-width) {
     width: 410px;
     height: 250px;
-    margin: 35px 0 0 70px;
+    margin: 39px 0 0 70px;
   }
 }
 
 .photo-editor__indicator-tablet-border {
   width: 275px;
-  height: 37px;
+  height: 34px;
   border-bottom: 1px solid $lightgrey;
   margin-bottom: 37px;
 
@@ -166,7 +168,7 @@
 
   @media (min-width: $desktop-width) {
     width: 289px;
-    margin-left: 90px;
+    margin-left: 93px;
   }
 
   &::before {
@@ -208,8 +210,8 @@
       background-image: url("../../img/icon-crop-desktop.png");
       width: 44px;
       height: 44px;
-      left: -88px;
-      top: -15px;
+      left: -91px;
+      top: -21px;
     }
   }
 }
@@ -230,15 +232,15 @@
     background-repeat: no-repeat;
     width: 22px;
     height: 22px;
-    left: -54px;
-    top: -10px;
+    left: -53px;
+    top: -9px;
 
     @media (min-width: $desktop-width) {
       background-image: url("../../img/icon-fill-desktop.png");
       width: 48px;
       height: 43px;
-      left: -88px;
-      top: -15px;
+      left: -92px;
+      top: -18px;
     }
   }
 }
@@ -248,7 +250,7 @@
     left: 96px;
 
     @media (min-width: $desktop-width) {
-      left: 141px;
+      left: 160px;
     }
   }
 
@@ -259,8 +261,8 @@
     background-repeat: no-repeat;
     width: 22px;
     height: 22px;
-    left: -54px;
-    top: -10px;
+    left: -48px;
+    top: -9px;
 
     @media (min-width: $desktop-width) {
       background-image: url("../../img/icon-contrast-desktop.png");
@@ -288,7 +290,7 @@
     width: 410px;
     display: flex;
     justify-content: space-between;
-    left: 600px;
+    left: 603px;
     top: 402px;
   }
 }
@@ -297,10 +299,11 @@
   @include button();
   margin: 38px auto 0;
   outline: none;
+  letter-spacing: 1px;
 
   @media (min-width: $tablet-width) {
     width: 260px;
-    margin-left: 25px;
+    margin: 25px 22px;
   }
 
   @media (min-width: $desktop-width) {

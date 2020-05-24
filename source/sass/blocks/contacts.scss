@@ -3,6 +3,12 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-bottom: 6px;
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-start;
+    margin-bottom: 3px;
+  }
 }
 
 .contacts__common {
@@ -10,6 +16,7 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
+    padding: 0 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,6 +36,11 @@
   color: $darkblue;
   text-align: center;
   margin: 0;
+  padding-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+  }
 }
 
 .contacts__info {
@@ -38,6 +50,14 @@
   color: $crimson;
   text-align: center;
   text-decoration: none;
-  margin: 0 0 25px 0;
+  margin: 0 0 23px 0;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 26px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 19px;
+  }
 }

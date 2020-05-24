@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="page-header page-header--open page-header--index">
+  <header class="page-header page-header-index page-header-index--open"><!--Убрать  -->
     <div class="page-header__home">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
@@ -51,7 +51,7 @@
     </nav>
     <p class="page-header__title page-header__title--index">Взгляните на жизнь иначе!</p>
     <picture>
-      <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png 2x">
+      <source media="(min-width: 960px)" srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png 2x">
       <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png 2x">
       <img class="page-header__picture" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x"
         width="258" height="286" alt="Телефон в руке">
@@ -81,21 +81,21 @@
       <ul class="advantage__list">
         <li class="advantage__item advantage__item--grey">
           <img class="advantage__picture-smile" src="img/iphone-screen-1-desktop@1x.png"
-            srcset="img/iphone-screen-1-desktop@2x.png 2x" width="300px" height="300px">
+            srcset="img/iphone-screen-1-desktop@2x.png 2x" width="291px" height="300px">
           <h3 class="advantage__title">Поднимает настроение</h3>
           <p class="advantage__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
             несколько кликов!</p>
         </li>
         <li class="advantage__item advantage__item--pink">
           <img class="advantage__picture-smile" src="img/iphone-screen-2-desktop@1x.png"
-            srcset="img/iphone-screen-2-desktop@2x.png 2x" width="300px" height="300px">
+            srcset="img/iphone-screen-2-desktop@2x.png 2x" width="291px" height="300px">
           <h3 class="advantage__title">Меняет мир вокруг</h3>
           <p class="advantage__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br>
             усилить эффект</p>
         </li>
         <li class="advantage__item advantage__item--smile">
           <img class="advantage__picture-smile" src="img/iphone-screen-3-desktop@1x.png"
-            srcset="img/iphone-screen-3-desktop@2x.png 2x" width="300px" height="300px">
+            srcset="img/iphone-screen-3-desktop@2x.png 2x" width="291px" height="300px">
           <h3 class="advantage__title">Заводит новых друзей</h3>
           <p class="advantage__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
             новых</p>
@@ -111,9 +111,9 @@
       </div>
     </section>
     <aside class="advantage__discovery">
-      <h3 class="advantage__discovery-title">Эффект<br> на 24 часа!</h3>
-      <p class="advantage__discovery-text">Британские ученые провели исследования и доказали, что положительный
-        эффект<br> от использования прилложения длиться целые сутки!</p>
+      <h3 class="advantage__discovery-title">Эффект<br class="advantage__discovery-break"> на 24 часа!</h3>
+      <p class="advantage__discovery-text">Британские ученые провели исследования и доказали,<br class="advantage__discovery-break-2"> что положительный
+        эффект<br class="advantage__discovery-break"> от использования приложения длится целые сутки!</p>
       <a class="advantage__discovery-link" href="#">Узнать больше об исследовании</a>
     </aside>
     <section class="slider-comment">
@@ -207,7 +207,7 @@
       <div class="page-route__contacts contacts">
         <div class="contacts__common">
           <h4 class="contacts__title">Звоните:</h4>
-          <a class="contacts__info" href="tel:+78125556666">+7(812)555-66-66</a>
+          <a class="contacts__info" href="tel:+78125556666">+7 (812) 555-66-66</a>
         </div>
         <div class="contacts__common contacts__common--third">
           <h4 class="contacts__title">Пишите:</h4>
@@ -219,7 +219,11 @@
         </div>
       </div>
       <div class="page-route__conteiner">
-        <img class="page-route__map" src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Место на карте">
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg, img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg 2x">
+        <img class="page-route__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="645" alt="Место на карте">
+      </picture>
       </div>
     </section>
     <footer class="page-footer page-footer--index">

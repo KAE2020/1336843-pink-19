@@ -17,20 +17,23 @@
   font-size: 24px;
   color: $darkblue;
   text-align: center;
-  padding: 35px;
+  padding: 40px 35px 35px;
   font-weight: 300;
   margin: 0;
+  line-height: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
-    padding: 41px;
+    padding: 45px;
+    line-height: 48px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
     width: 500px;
     padding: 0;
-    margin: 65px auto;
+    margin: 63px auto 59px;
+    line-height: 59px;
   }
 }
 
@@ -38,20 +41,17 @@
   width: 320px;
   height: 220px;
   position: relative;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     width: 660px;
-    height: 368px;
-    background-image: url("../../img/bg-map-tablet@1x.jpg");
-    background-position: -20px 71%;
-    background-repeat: no-repeat;
+    height: 378px;
+    margin-top: -30px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1200px;
-    height: 500px;
-    background-image: url("../../img/bg-map-desktop@1x.jpg");
-    background-position: 0 -278px;
+    height: 523px;
   }
 
   &::before {
@@ -78,7 +78,7 @@
       width: 1200px;
       height: 123px;
       z-index: 2;
-      top: -21px;
+      top: 0;
     }
   }
 
@@ -94,12 +94,13 @@
 
     @media (min-width: $tablet-width) {
       left: 312px;
-      top: 197px;
+      top: 198px;
     }
 
     @media (min-width: $desktop-width) {
       left: 582px;
-      top: 260px;
+      top: 283px;
+      z-index: 2;
     }
   }
 }
@@ -110,6 +111,17 @@
   z-index: -2;
 
   @media (min-width: $tablet-width) {
-    display: none;
+    width: auto;
+    height: auto;
+    top: -342px;
+    left: -20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    height: auto;
+    top: -257px;
+    z-index: 1;
+    left: 0;
   }
 }

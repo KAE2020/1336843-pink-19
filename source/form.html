@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="page-header page-header--open">
+  <header class="page-header page-header-photo page-header--open"><!--Убрать -->
     <div class="page-header__home">
       <a class="page-header__logo" href="index.html">
         <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
@@ -58,7 +58,7 @@
     <section class="page-form">
       <h2 class="visually-hidden">Укажите все необходимые данные и нажмите "отправить форму"</h2>
       <p class="page-form__greeting">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу
-        бонусную карту! Пожалуйста, заполнте форму ниже:</p>
+        бонусную карту! <span class="page-form__greeting-appear">Пожалуйста, заполните форму ниже:</span></p>
       <form class="page-form__main" action="https://echo.htmlacademy.ru" method="POST">
         <div class="page-form__name">
           <div class="page-form__data data">
@@ -73,7 +73,7 @@
           <div class="page-form__data data">
             <label class="data__title" for="patronymic">Отчество:</label>
             <input class="data__inside" type="text" id="patronymic" name="patronymic"
-              placeholder="Ну и отчество тоже *">
+              placeholder="Ну и отчество тоже">
           </div>
         </div>
         <div class="page-form__interview interview interview--4">
@@ -122,15 +122,15 @@
           <ul class="interview__list interview__list--radio">
             <li class="interview__item">
               <input class="interview__radio-check" type="radio" id="for-ios" name="for-os" value="ios" checked>
-              <label class="interview__description" for="for-ios"> PINK для iOS</label>
+              <label class="interview__description interview__description--os" for="for-ios"> Pink для iOS</label>
             </li>
             <li class="interview__item">
               <input class="interview__radio-check" type="radio" id="for-android" name="for-os" value="android">
-              <label class="interview__description" for="for-android"> PINK для Android</label>
+              <label class="interview__description interview__description--os" for="for-android"> Pink на Android</label>
             </li>
             <li class="interview__item">
               <input class="interview__radio-check" type="radio" id="for-windows" name="for-os" value="windows">
-              <label class="interview__description" for="for-windows">Windows Phone</label>
+              <label class="interview__description interview__description--os" for="for-windows">Windows Phone</label>
             </li>
           </ul>
         </div>

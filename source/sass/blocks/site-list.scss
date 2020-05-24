@@ -2,11 +2,11 @@
   @include list-reset();
   position: relative;
   margin: 0;
-
+  /*display: none;убрать*/
   @media (min-width: $desktop-width) {
     display: flex;
     position: absolute;
-    width: 624px;
+    width: 621px;
     justify-content: space-between;
     top: -90px;
     left: 450px;
@@ -59,7 +59,7 @@
     text-transform: none;
     font-weight: 400;
     box-sizing: border-box;
-    margin-top: 20px;
+    margin-top: 15px;
   }
 }
 
