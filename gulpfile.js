@@ -17,6 +17,7 @@ var imagemin = require("gulp-imagemin");
 /* posthtml */
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
+var replace = require("gulp-string-replace");
 
 /* clean build */
 var del = require("del");
@@ -29,6 +30,7 @@ gulp.task("style", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(replace("../../img/", "../img/"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
