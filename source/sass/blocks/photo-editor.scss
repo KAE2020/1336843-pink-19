@@ -299,7 +299,6 @@
   @include button();
   margin: 38px auto 0;
   outline: none;
-  letter-spacing: 1px;
 
   @media (min-width: $tablet-width) {
     width: 260px;

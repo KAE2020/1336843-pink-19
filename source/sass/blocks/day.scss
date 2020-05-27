@@ -1,0 +1,95 @@
+.day {
+  position: relative;
+  display: none;
+  width: 300px;
+  margin: 95px 30px 0 330px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 97px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey-background;
+    height: 416px;
+    width: 1200px;
+    margin: 0;
+  }
+}
+
+.day::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../img/icon-time-24.png");
+  background-repeat: no-repeat;
+  width: 238px;
+  height: 276px;
+  top: -35px;
+  left: -309px;
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/icon-time-24-desktop.png");
+    width: 298px;
+    height: 345px;
+    left: 130px;
+    top: 3px;
+  }
+}
+
+.day__title {
+  font-size: 30px;
+  font-weight: bold;
+  width: 180px;
+  margin: 0;
+  line-height: 37px;
+
+  @media (min-width: $desktop-width) {
+    width: 315px;
+    padding-left: 497px;
+    padding-top: 94px;
+  }
+}
+
+.day .day__break {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.day .day__break-2 {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.day__text {
+  font-size: 14px;
+  font-weight: 400;
+  color: $darkblue;
+  line-height: 25px;
+  width: 305px;
+  margin: 10px 0 8px;
+
+  @media (min-width: $desktop-width) {
+    width: 530px;
+    padding-left: 495px;
+    font-size: 18px;
+    padding-top: 12px;
+    line-height: 30px;
+    margin-bottom: 33px;
+  }
+}
+
+.day__link {
+  width: 300px;
+  color: $crimson;
+  font-size: 14px;
+  font-weight: 400;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 495px;
+    font-size: 18px;
+  }
+}

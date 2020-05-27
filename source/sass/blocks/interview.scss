@@ -73,7 +73,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-bottom: 41px;
+    padding-bottom: 39px;
   }
 }
 
@@ -86,7 +86,7 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,6 +103,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     margin-left: 73px;
+    width: 280px;
   }
 }
 
@@ -153,16 +154,24 @@
   }
 }
 
-.interview__check,
-.interview__radio-check {
-  display: none;
-}
-
 .interview__description {
   padding-left: 69px;
-  margin-top: 7px;
+  margin-top: -22.5px;
   height: 75px;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 58px;
+    margin-top: -21px;
+    height: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 60px;
+    /*margin-top: 6px;*/
+    margin-top: -22px;
+    height: 75px;
+  }
 
   &--os {
     height: 70px;
@@ -171,16 +180,12 @@
 
     @media (min-width: $tablet-width) {
       height: 67px;
+      padding-left: 58px;
     }
-  }
 
-  @media (min-width: $tablet-width) {
-    padding-left: 58px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 60px;
-    margin-top: 6px;
+    @media (min-width: $desktop-width) {
+      padding-left: 62px;
+    }
   }
 }
 
