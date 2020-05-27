@@ -2,7 +2,8 @@
   @include list-reset();
   position: relative;
   margin: 0;
-  /*display: none;убрать*/
+  display: none;/*убрать для показа меню*/
+
   @media (min-width: $desktop-width) {
     display: flex;
     position: absolute;
